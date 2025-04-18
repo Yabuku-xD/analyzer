@@ -1,0 +1,43 @@
+# Core libraries
+numpy
+pandas
+scikit-learn
+matplotlib
+seaborn
+
+# Web scraping
+requests
+beautifulsoup4
+selenium
+scrapy
+playwright
+
+# NLP libraries
+nltk
+spacy
+transformers
+gensim
+
+# Time series analysis
+prophet
+statsmodels
+
+# Knowledge graph and relationship mapping
+networkx
+pyvis
+
+# Machine learning
+xgboost
+lightgbm
+tensorflow
+torch
+
+# Web application
+flask
+dash
+plotly
+
+# Utilities
+tqdm
+joblib
+python-dotenv

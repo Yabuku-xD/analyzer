@@ -1,0 +1,22 @@
+2025-04-17 08:19:21,587 - processor - INFO - Processing job postings from C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\raw\all_results_20250417_081857.json
+2025-04-17 08:19:23,435 - processor - WARNING - Skill dictionary not found at data\processed\skill_dictionary.json. Using default.
+2025-04-17 08:19:23,436 - processor - WARNING - Skill dictionary not found at data\processed\skill_dictionary.json. Using default.
+2025-04-17 08:19:23,436 - processor - WARNING - Skill dictionary not found at data\processed\skill_dictionary.json. Using default.
+2025-04-17 08:19:23,436 - processor - WARNING - Skill dictionary not found at data\processed\skill_dictionary.json. Using default.
+2025-04-17 08:19:23,438 - processor - WARNING - Skill dictionary not found at data\processed\skill_dictionary.json. Using default.
+2025-04-17 08:19:23,438 - processor - WARNING - Skill dictionary not found at data\processed\skill_dictionary.json. Using default.
+2025-04-17 08:19:23,438 - processor - WARNING - Skill dictionary not found at data\processed\skill_dictionary.json. Using default.
+2025-04-17 08:19:23,438 - processor - WARNING - Skill dictionary not found at data\processed\skill_dictionary.json. Using default.
+2025-04-17 08:19:23,439 - processor - WARNING - Skill dictionary not found at data\processed\skill_dictionary.json. Using default.
+2025-04-17 08:19:23,439 - processor - WARNING - Skill dictionary not found at data\processed\skill_dictionary.json. Using default.
+2025-04-17 08:19:23,439 - processor - WARNING - Skill dictionary not found at data\processed\skill_dictionary.json. Using default.
+2025-04-17 08:19:23,439 - processor - WARNING - Skill dictionary not found at data\processed\skill_dictionary.json. Using default.
+2025-04-17 08:19:23,440 - processor - WARNING - Skill dictionary not found at data\processed\skill_dictionary.json. Using default.
+2025-04-17 08:19:23,440 - processor - WARNING - Skill dictionary not found at data\processed\skill_dictionary.json. Using default.
+2025-04-17 08:19:23,440 - processor - WARNING - Skill dictionary not found at data\processed\skill_dictionary.json. Using default.
+2025-04-17 08:19:23,440 - processor - WARNING - Skill dictionary not found at data\processed\skill_dictionary.json. Using default.
+2025-04-17 08:19:23,440 - processor - WARNING - Skill dictionary not found at data\processed\skill_dictionary.json. Using default.
+2025-04-17 08:19:23,441 - processor - WARNING - Skill dictionary not found at data\processed\skill_dictionary.json. Using default.
+2025-04-17 08:19:23,441 - processor - WARNING - Skill dictionary not found at data\processed\skill_dictionary.json. Using default.
+2025-04-17 08:19:23,442 - processor - WARNING - Skill dictionary not found at data\processed\skill_dictionary.json. Using default.
+2025-04-17 08:19:23,446 - processor - INFO - Saved 20 processed job postings to C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\processed\all_results_20250417_081857_processed.csv

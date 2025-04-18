@@ -1,0 +1,21 @@
+2025-04-16 23:15:01,279 - scraper - INFO - Scraping LinkedIn for 'data scientist' in 'New York'
+2025-04-16 23:36:57,709 - scraper - INFO - Scraping LinkedIn for 'data scientist' in 'New York'
+2025-04-16 23:45:18,415 - scraper - INFO - Scraping LinkedIn for 'data scientist' in 'New York'
+2025-04-17 08:18:57,234 - scraper - INFO - Generating mock data for 1 queries and 1 locations
+2025-04-17 08:18:57,235 - scraper - INFO - Generated 20 mock job postings saved to data\raw\mock_data_20250417_081857.json
+2025-04-17 08:18:57,236 - scraper - INFO - Saved 20 total job postings to data\raw\all_results_20250417_081857.json
+2025-04-17 08:32:53,117 - scraper - INFO - Generating mock data for 1 queries and 1 locations
+2025-04-17 08:32:53,119 - scraper - INFO - Generated 20 mock job postings saved to data\raw\mock_data_20250417_083253.json
+2025-04-17 08:32:53,120 - scraper - INFO - Saved 20 total job postings to data\raw\all_results_20250417_083253.json
+2025-04-17 08:34:40,167 - scraper - INFO - Generating mock data for 2 queries and 2 locations
+2025-04-17 08:34:40,168 - scraper - INFO - Generated 80 mock job postings saved to data\raw\mock_data_20250417_083440.json
+2025-04-17 08:34:40,169 - scraper - INFO - Saved 80 total job postings to data\raw\all_results_20250417_083440.json
+2025-04-17 08:38:22,723 - scraper - INFO - Generating mock data for 2 queries and 2 locations
+2025-04-17 08:38:22,724 - scraper - INFO - Generated 80 mock job postings saved to data\raw\mock_data_20250417_083822.json
+2025-04-17 08:38:22,725 - scraper - INFO - Saved 80 total job postings to data\raw\all_results_20250417_083822.json
+2025-04-17 09:14:23,884 - scraper - INFO - Generating mock data for 2 queries and 2 locations
+2025-04-17 09:14:23,884 - scraper - INFO - Generated 80 mock job postings saved to data\raw\mock_data_20250417_091423.json
+2025-04-17 09:14:23,885 - scraper - INFO - Saved 80 total job postings to data\raw\all_results_20250417_091423.json
+2025-04-17 09:16:24,386 - scraper - INFO - Generating mock data for 2 queries and 2 locations
+2025-04-17 09:16:24,388 - scraper - INFO - Generated 80 mock job postings saved to data\raw\mock_data_20250417_091624.json
+2025-04-17 09:16:24,388 - scraper - INFO - Saved 80 total job postings to data\raw\all_results_20250417_091624.json

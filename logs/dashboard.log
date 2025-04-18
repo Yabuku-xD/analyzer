@@ -1,0 +1,94 @@
+2025-04-17 08:38:36,829 - dashboard - INFO - Initializing dashboard
+2025-04-17 08:38:36,839 - dashboard - INFO - Creating dashboard layout
+2025-04-17 08:38:36,840 - dashboard - INFO - Registering dashboard callbacks
+2025-04-17 08:38:36,840 - dashboard - ERROR - Error loading data: [Errno 2] No such file or directory: 'C:\\Users\\Yabuku\\Downloads\\dynamic-workforce-analyzer\\data\\processed\\skill_trends\\skill_trends.json'
+2025-04-17 09:14:28,912 - dashboard - INFO - Initializing dashboard
+2025-04-17 09:14:28,921 - dashboard - INFO - Creating dashboard layout
+2025-04-17 09:14:28,922 - dashboard - INFO - Registering dashboard callbacks
+2025-04-17 09:14:29,975 - dashboard - INFO - Initializing dashboard
+2025-04-17 09:14:29,989 - dashboard - INFO - Creating dashboard layout
+2025-04-17 09:14:29,990 - dashboard - INFO - Registering dashboard callbacks
+2025-04-17 09:16:28,725 - dashboard - INFO - Initializing dashboard
+2025-04-17 09:16:28,733 - dashboard - INFO - Creating dashboard layout
+2025-04-17 09:16:28,734 - dashboard - INFO - Registering dashboard callbacks
+2025-04-17 09:16:29,747 - dashboard - INFO - Initializing dashboard
+2025-04-17 09:16:29,755 - dashboard - INFO - Creating dashboard layout
+2025-04-17 09:16:29,756 - dashboard - INFO - Registering dashboard callbacks
+2025-04-17 09:16:54,736 - dashboard - INFO - Initializing dashboard
+2025-04-17 09:16:54,748 - dashboard - INFO - Creating dashboard layout
+2025-04-17 09:16:54,750 - dashboard - INFO - Registering dashboard callbacks
+2025-04-17 09:16:57,068 - dashboard - INFO - Initializing dashboard
+2025-04-17 09:16:57,077 - dashboard - INFO - Creating dashboard layout
+2025-04-17 09:16:57,078 - dashboard - INFO - Registering dashboard callbacks
+2025-04-17 09:16:59,320 - dashboard - INFO - Initializing dashboard
+2025-04-17 09:16:59,329 - dashboard - INFO - Creating dashboard layout
+2025-04-17 09:16:59,331 - dashboard - INFO - Registering dashboard callbacks
+2025-04-17 09:17:01,585 - dashboard - INFO - Initializing dashboard
+2025-04-17 09:17:01,594 - dashboard - INFO - Creating dashboard layout
+2025-04-17 09:17:01,595 - dashboard - INFO - Registering dashboard callbacks
+2025-04-17 09:17:03,921 - dashboard - INFO - Initializing dashboard
+2025-04-17 09:17:03,931 - dashboard - INFO - Creating dashboard layout
+2025-04-17 09:17:03,933 - dashboard - INFO - Registering dashboard callbacks
+2025-04-17 09:17:06,126 - dashboard - INFO - Initializing dashboard
+2025-04-17 09:17:06,135 - dashboard - INFO - Creating dashboard layout
+2025-04-17 09:17:06,137 - dashboard - INFO - Registering dashboard callbacks
+2025-04-17 09:18:34,045 - dashboard - INFO - Initializing dashboard
+2025-04-17 09:18:34,055 - dashboard - INFO - Creating dashboard layout
+2025-04-17 09:18:34,056 - dashboard - INFO - Registering dashboard callbacks
+2025-04-17 09:18:53,871 - dashboard - INFO - Initializing dashboard
+2025-04-17 09:18:53,880 - dashboard - INFO - Creating dashboard layout
+2025-04-17 09:18:53,882 - dashboard - INFO - Registering dashboard callbacks
+2025-04-17 09:18:54,868 - dashboard - INFO - Initializing dashboard
+2025-04-17 09:18:54,878 - dashboard - INFO - Creating dashboard layout
+2025-04-17 09:18:54,879 - dashboard - INFO - Registering dashboard callbacks
+2025-04-17 09:19:01,136 - dashboard - INFO - Initializing dashboard
+2025-04-17 09:19:01,146 - dashboard - INFO - Creating dashboard layout
+2025-04-17 09:19:01,147 - dashboard - INFO - Registering dashboard callbacks
+2025-04-17 09:22:25,114 - dashboard - INFO - Initializing dashboard
+2025-04-17 09:22:25,123 - dashboard - INFO - Creating dashboard layout
+2025-04-17 09:22:25,124 - dashboard - INFO - Registering dashboard callbacks
+2025-04-17 09:22:46,533 - dashboard - INFO - Initializing dashboard
+2025-04-17 09:22:46,542 - dashboard - INFO - Creating dashboard layout
+2025-04-17 09:22:46,544 - dashboard - INFO - Registering dashboard callbacks
+2025-04-17 09:23:09,004 - dashboard - INFO - Initializing dashboard
+2025-04-17 09:23:09,012 - dashboard - INFO - Creating dashboard layout
+2025-04-17 09:23:09,013 - dashboard - INFO - Registering dashboard callbacks
+2025-04-17 09:23:13,250 - dashboard - INFO - Initializing dashboard
+2025-04-17 09:23:13,258 - dashboard - INFO - Creating dashboard layout
+2025-04-17 09:23:13,260 - dashboard - INFO - Registering dashboard callbacks
+2025-04-17 09:23:26,689 - dashboard - INFO - Initializing dashboard
+2025-04-17 09:23:26,699 - dashboard - INFO - Creating dashboard layout
+2025-04-17 09:23:26,700 - dashboard - INFO - Registering dashboard callbacks
+2025-04-17 09:23:48,150 - dashboard - INFO - Initializing dashboard
+2025-04-17 09:23:48,161 - dashboard - INFO - Creating dashboard layout
+2025-04-17 09:23:48,163 - dashboard - INFO - Registering dashboard callbacks
+2025-04-17 09:31:08,315 - dashboard - INFO - Initializing dashboard
+2025-04-17 09:31:08,324 - dashboard - INFO - Creating dashboard layout
+2025-04-17 09:31:08,325 - dashboard - INFO - Registering dashboard callbacks
+2025-04-17 09:31:09,385 - dashboard - INFO - Initializing dashboard
+2025-04-17 09:31:09,394 - dashboard - INFO - Creating dashboard layout
+2025-04-17 09:31:09,395 - dashboard - INFO - Registering dashboard callbacks
+2025-04-17 09:37:32,194 - dashboard - INFO - Initializing dashboard
+2025-04-17 09:37:32,204 - dashboard - INFO - Creating dashboard layout
+2025-04-17 09:37:32,206 - dashboard - INFO - Registering dashboard callbacks
+2025-04-17 09:37:35,416 - dashboard - INFO - Initializing dashboard
+2025-04-17 09:37:35,424 - dashboard - INFO - Creating dashboard layout
+2025-04-17 09:37:35,425 - dashboard - INFO - Registering dashboard callbacks
+2025-04-17 09:40:10,065 - dashboard - INFO - Initializing dashboard
+2025-04-17 09:40:10,074 - dashboard - INFO - Creating dashboard layout
+2025-04-17 09:40:10,076 - dashboard - INFO - Registering dashboard callbacks
+2025-04-17 09:42:21,138 - dashboard - INFO - Initializing dashboard
+2025-04-17 09:42:21,147 - dashboard - INFO - Creating dashboard layout
+2025-04-17 09:42:21,148 - dashboard - INFO - Registering dashboard callbacks
+2025-04-17 09:42:22,091 - dashboard - INFO - Initializing dashboard
+2025-04-17 09:42:22,100 - dashboard - INFO - Creating dashboard layout
+2025-04-17 09:42:22,102 - dashboard - INFO - Registering dashboard callbacks
+2025-04-17 21:14:07,951 - dashboard - INFO - Initializing dashboard
+2025-04-17 21:14:07,961 - dashboard - INFO - Creating dashboard layout
+2025-04-17 21:14:07,962 - dashboard - INFO - Registering dashboard callbacks
+2025-04-17 21:14:08,982 - dashboard - INFO - Initializing dashboard
+2025-04-17 21:14:08,991 - dashboard - INFO - Creating dashboard layout
+2025-04-17 21:14:08,992 - dashboard - INFO - Registering dashboard callbacks
+2025-04-17 21:21:36,229 - dashboard - INFO - Initializing dashboard
+2025-04-17 21:21:36,232 - dashboard - INFO - Creating dashboard layout
+2025-04-17 21:21:36,240 - dashboard - INFO - Registering dashboard callbacks

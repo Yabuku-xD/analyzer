@@ -1,0 +1,82 @@
+{
+  "azure": {
+    "type": "linear",
+    "parameters": {
+      "slope": -5.520436266022423e-09,
+      "intercept": 9.784363277426898
+    },
+    "feature": "time_index"
+  },
+  "tensorflow": {
+    "type": "linear",
+    "parameters": {
+      "slope": -4.015329728232755e-09,
+      "intercept": 7.28375678832685
+    },
+    "feature": "time_index"
+  },
+  "java": {
+    "type": "linear",
+    "parameters": {
+      "slope": 3.058157311140494e-09,
+      "intercept": -4.984451865225191
+    },
+    "feature": "time_index"
+  },
+  "javascript": {
+    "type": "linear",
+    "parameters": {
+      "slope": 2.376664248523331e-09,
+      "intercept": -3.776270542515106
+    },
+    "feature": "time_index"
+  },
+  "python": {
+    "type": "linear",
+    "parameters": {
+      "slope": 2.895489369058543e-09,
+      "intercept": -4.764534212819577
+    },
+    "feature": "time_index"
+  },
+  "leadership": {
+    "type": "linear",
+    "parameters": {
+      "slope": 2.063314423249961e-09,
+      "intercept": -3.3947449594605756
+    },
+    "feature": "time_index"
+  },
+  "teamwork": {
+    "type": "linear",
+    "parameters": {
+      "slope": -1.3823350488712824e-08,
+      "intercept": 24.212054819691893
+    },
+    "feature": "time_index"
+  },
+  "problem solving": {
+    "type": "linear",
+    "parameters": {
+      "slope": 3.710541373595501e-09,
+      "intercept": -6.229595292241425
+    },
+    "feature": "time_index"
+  },
+  "aws": {
+    "type": "linear",
+    "parameters": {
+      "slope": -2.0290685407069396e-09,
+      "intercept": 3.83528861158666
+    },
+    "feature": "time_index"
+  },
+  "communication": {
+    "type": "linear",
+    "parameters": {
+      "slope": 6.450167115304337e-25,
+      "intercept": 0.9999999999999986
+    },
+    "feature": "time_index"
+  }
+}

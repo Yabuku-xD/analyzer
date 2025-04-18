@@ -1,0 +1,97 @@
+2025-04-17 08:32:55,775 - train_models - INFO - Training models with the following parameters:
+2025-04-17 08:32:55,775 - train_models - INFO - Input directory: C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\processed
+2025-04-17 08:32:55,775 - train_models - INFO - Output directory: C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\models
+2025-04-17 08:32:55,775 - train_models - INFO - Models to train: ['all']
+2025-04-17 08:32:55,776 - train_models - INFO - Using processed data from C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\processed\all_results_20250417_081857_processed.csv
+2025-04-17 08:32:55,799 - train_models - ERROR - Error training relationships model: Object of type int64 is not JSON serializable
+2025-04-17 08:32:55,800 - train_models - INFO - Completed skill trend analysis
+2025-04-17 08:32:55,801 - train_models - INFO - Completed predictive model training
+2025-04-17 08:32:55,801 - train_models - INFO - Model training completed
+2025-04-17 08:34:42,343 - train_models - INFO - Training models with the following parameters:
+2025-04-17 08:34:42,343 - train_models - INFO - Input directory: C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\processed
+2025-04-17 08:34:42,343 - train_models - INFO - Output directory: C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\models
+2025-04-17 08:34:42,343 - train_models - INFO - Models to train: ['all']
+2025-04-17 08:34:42,343 - train_models - INFO - Using processed data from C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\processed\mock_data_20250417_083440_processed.csv
+2025-04-17 08:34:42,424 - train_models - ERROR - Error training relationships model: Object of type int64 is not JSON serializable
+2025-04-17 08:34:42,438 - train_models - INFO - Completed skill trend analysis
+2025-04-17 08:38:23,932 - train_models - INFO - Training models with the following parameters:
+2025-04-17 08:38:23,932 - train_models - INFO - Input directory: C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\processed
+2025-04-17 08:38:23,932 - train_models - INFO - Output directory: C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\models
+2025-04-17 08:38:23,932 - train_models - INFO - Models to train: ['all']
+2025-04-17 08:38:23,932 - train_models - INFO - Fast mode: False
+2025-04-17 08:38:23,932 - train_models - INFO - Synthetic data: False
+2025-04-17 08:38:23,932 - train_models - INFO - Using processed data from C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\processed\mock_data_20250417_083440_processed.csv
+2025-04-17 08:38:23,932 - train_models - INFO - Loading job data from C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\processed\mock_data_20250417_083440_processed.csv
+2025-04-17 08:38:23,940 - train_models - INFO - Loaded 80 job postings
+2025-04-17 08:38:23,940 - train_models - INFO - Analyzing skill relationships
+2025-04-17 08:38:23,941 - train_models - INFO - Identified 16 skill columns
+2025-04-17 08:38:23,941 - train_models - INFO - Building skill co-occurrence matrix
+2025-04-17 08:38:23,955 - train_models - INFO - Building skill relationship graph
+2025-04-17 08:38:23,958 - train_models - INFO - Finding skill clusters
+2025-04-17 08:38:23,959 - train_models - INFO - Completed skill relationship analysis in 0.02 seconds
+2025-04-17 08:38:23,959 - train_models - INFO - Completed skill relationship analysis
+2025-04-17 08:38:23,959 - train_models - INFO - Analyzing skill trends
+2025-04-17 08:38:23,959 - train_models - INFO - Identified 16 skill columns
+2025-04-17 08:38:23,959 - train_models - WARNING - Limited date variation, generating synthetic time series
+2025-04-17 08:38:23,962 - train_models - INFO - Preparing time series data
+2025-04-17 08:38:23,969 - train_models - INFO - Completed skill trend analysis in 0.01 seconds
+2025-04-17 08:38:23,969 - train_models - INFO - Completed skill trend analysis
+2025-04-17 08:38:23,969 - train_models - INFO - Training predictive models
+2025-04-17 08:38:23,972 - train_models - ERROR - Error training predictive model: Converting from datetime64[ns] to int32 is not supported. Do obj.astype('int64').astype(dtype) instead
+2025-04-17 08:38:23,972 - train_models - INFO - Model training completed
+2025-04-17 09:14:25,162 - train_models - INFO - Training models with the following parameters:
+2025-04-17 09:14:25,162 - train_models - INFO - Input directory: C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\processed
+2025-04-17 09:14:25,162 - train_models - INFO - Output directory: C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\models
+2025-04-17 09:14:25,162 - train_models - INFO - Models to train: ['all']
+2025-04-17 09:14:25,162 - train_models - INFO - Fast mode: False
+2025-04-17 09:14:25,162 - train_models - INFO - Synthetic data: False
+2025-04-17 09:14:25,163 - train_models - INFO - Using processed data from C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\processed\mock_data_20250417_091423_processed.csv
+2025-04-17 09:14:25,163 - train_models - INFO - Loading job data from C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\processed\mock_data_20250417_091423_processed.csv
+2025-04-17 09:14:25,171 - train_models - INFO - Loaded 80 job postings
+2025-04-17 09:14:25,171 - train_models - INFO - Analyzing skill relationships
+2025-04-17 09:14:25,172 - train_models - INFO - Identified 16 skill columns
+2025-04-17 09:14:25,172 - train_models - INFO - Building skill co-occurrence matrix
+2025-04-17 09:14:25,187 - train_models - INFO - Building skill relationship graph
+2025-04-17 09:14:25,189 - train_models - INFO - Finding skill clusters
+2025-04-17 09:14:25,190 - train_models - INFO - Completed skill relationship analysis in 0.02 seconds
+2025-04-17 09:14:25,190 - train_models - INFO - Completed skill relationship analysis
+2025-04-17 09:14:25,190 - train_models - INFO - Analyzing skill trends
+2025-04-17 09:14:25,191 - train_models - INFO - Identified 16 skill columns
+2025-04-17 09:14:25,191 - train_models - WARNING - Limited date variation, generating synthetic time series
+2025-04-17 09:14:25,191 - train_models - INFO - Preparing time series data
+2025-04-17 09:14:25,195 - train_models - INFO - Completed skill trend analysis in 0.01 seconds
+2025-04-17 09:14:25,196 - train_models - INFO - Completed skill trend analysis
+2025-04-17 09:14:25,196 - train_models - INFO - Training predictive models
+2025-04-17 09:14:25,197 - train_models - INFO - Identified 16 skill columns
+2025-04-17 09:14:25,197 - train_models - INFO - Training simplified prediction models
+2025-04-17 09:14:25,201 - train_models - INFO - Completed predictive model training in 0.01 seconds
+2025-04-17 09:14:25,201 - train_models - INFO - Completed predictive model training
+2025-04-17 09:14:25,201 - train_models - INFO - Model training completed
+2025-04-17 09:16:25,727 - train_models - INFO - Training models with the following parameters:
+2025-04-17 09:16:25,727 - train_models - INFO - Input directory: C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\processed
+2025-04-17 09:16:25,727 - train_models - INFO - Output directory: C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\models
+2025-04-17 09:16:25,727 - train_models - INFO - Models to train: ['all']
+2025-04-17 09:16:25,727 - train_models - INFO - Fast mode: False
+2025-04-17 09:16:25,727 - train_models - INFO - Synthetic data: False
+2025-04-17 09:16:25,728 - train_models - INFO - Using processed data from C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\processed\mock_data_20250417_091624_processed.csv
+2025-04-17 09:16:25,728 - train_models - INFO - Loading job data from C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\processed\mock_data_20250417_091624_processed.csv
+2025-04-17 09:16:25,735 - train_models - INFO - Loaded 80 job postings
+2025-04-17 09:16:25,735 - train_models - INFO - Analyzing skill relationships
+2025-04-17 09:16:25,737 - train_models - INFO - Identified 16 skill columns
+2025-04-17 09:16:25,737 - train_models - INFO - Building skill co-occurrence matrix
+2025-04-17 09:16:25,751 - train_models - INFO - Building skill relationship graph
+2025-04-17 09:16:25,752 - train_models - INFO - Finding skill clusters
+2025-04-17 09:16:25,753 - train_models - INFO - Completed skill relationship analysis in 0.02 seconds
+2025-04-17 09:16:25,753 - train_models - INFO - Completed skill relationship analysis
+2025-04-17 09:16:25,753 - train_models - INFO - Analyzing skill trends
+2025-04-17 09:16:25,754 - train_models - INFO - Identified 16 skill columns
+2025-04-17 09:16:25,754 - train_models - WARNING - Limited date variation, generating synthetic time series
+2025-04-17 09:16:25,754 - train_models - INFO - Preparing time series data
+2025-04-17 09:16:25,759 - train_models - INFO - Completed skill trend analysis in 0.01 seconds
+2025-04-17 09:16:25,759 - train_models - INFO - Completed skill trend analysis
+2025-04-17 09:16:25,759 - train_models - INFO - Training predictive models
+2025-04-17 09:16:25,760 - train_models - INFO - Identified 16 skill columns
+2025-04-17 09:16:25,760 - train_models - INFO - Training simplified prediction models
+2025-04-17 09:16:25,764 - train_models - INFO - Completed predictive model training in 0.01 seconds
+2025-04-17 09:16:25,764 - train_models - INFO - Completed predictive model training
+2025-04-17 09:16:25,764 - train_models - INFO - Model training completed

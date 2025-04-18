@@ -1,0 +1,62 @@
+[
+  {
+    "name": "pytorch",
+    "slope": 1.0000000000000002,
+    "mean_demand": 3.4285714285714284
+  },
+  {
+    "name": "angular",
+    "slope": 0.6428571428571429,
+    "mean_demand": 3.5714285714285716
+  },
+  {
+    "name": "communication",
+    "slope": 0.5714285714285718,
+    "mean_demand": 11.428571428571429
+  },
+  {
+    "name": "java",
+    "slope": 0.285714285714286,
+    "mean_demand": 3.7142857142857144
+  },
+  {
+    "name": "javascript",
+    "slope": 0.2857142857142858,
+    "mean_demand": 4.0
+  },
+  {
+    "name": "python",
+    "slope": 0.25,
+    "mean_demand": 3.0
+  },
+  {
+    "name": "problem solving",
+    "slope": 0.24999999999999992,
+    "mean_demand": 2.4285714285714284
+  },
+  {
+    "name": "sql",
+    "slope": 0.21428571428571455,
+    "mean_demand": 2.7142857142857144
+  },
+  {
+    "name": "react",
+    "slope": 0.21428571428571447,
+    "mean_demand": 4.285714285714286
+  },
+  {
+    "name": "leadership",
+    "slope": 0.17857142857142855,
+    "mean_demand": 2.142857142857143
+  },
+  {
+    "name": "aws",
+    "slope": 0.10714285714285723,
+    "mean_demand": 3.5714285714285716
+  },
+  {
+    "name": "docker",
+    "slope": 0.10714285714285707,
+    "mean_demand": 4.0
+  }
+]

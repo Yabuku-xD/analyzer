@@ -1,0 +1,214 @@
+{% extends "base.html" %}
+{% set active_page = "trends" %}
+
+{% block content %}
+<section class="trends-section">
+    <h2>Skill Demand Trends</h2>
+    <p>Track how skill demands are evolving over time</p>
+    
+    <div class="filters">
+        <div class="filter-group">
+            <label for="industry">Select Industry</label>
+            <select id="industry" class="filter-select">
+                <option value="all">All Industries</option>
+                <option value="technology">Technology</option>
+                <option value="finance">Finance</option>
+                <option value="healthcare">Healthcare</option>
+                <option value="manufacturing">Manufacturing</option>
+            </select>
+        </div>
+        
+        <div class="filter-group">
+            <label for="time-period">Select Time Period</label>
+            <select id="time-period" class="filter-select">
+                <option value="all">All Time</option>
+                <option value="1y">Last 1 Year</option>
+                <option value="6m">Last 6 Months</option>
+                <option value="3m">Last 3 Months</option>
+            </select>
+        </div>
+        
+        <div class="filter-group">
+            <label for="skill-category">Skill Category</label>
+            <select id="skill-category" class="filter-select">
+                <option value="all">All Categories</option>
+                <option value="technical">Technical Skills</option>
+                <option value="soft">Soft Skills</option>
+                <option value="domain">Domain Knowledge</option>
+            </select>
+        </div>
+    </div>
+    
+    <div class="chart-row">
+        <div class="chart-container">
+            <h3>Top Rising Skills</h3>
+            <div id="rising-skills-chart" class="chart"></div>
+        </div>
+        
+        <div class="chart-container">
+            <h3>Top Declining Skills</h3>
+            <div id="declining-skills-chart" class="chart"></div>
+        </div>
+    </div>
+    
+    <div class="skill-detail">
+        <h3>Skill Detail</h3>
+        <p>Select a skill to see detailed trend analysis</p>
+        
+        <select id="skill-detail-dropdown" class="filter-select">
+            <option value="">Select a skill...</option>
+        </select>
+        
+        <div id="skill-detail-chart" class="chart chart-large"></div>
+        
+        <h4>Forecast</h4>
+        <div id="skill-forecast-chart" class="chart chart-large"></div>
+    </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script>
+    // Fetch data and render charts when page loads
+    document.addEventListener('DOMContentLoaded', function() {
+        // Fetch rising skills data
+        fetch('/api/rising-skills')
+            .then(response => response.json())
+            .then(data => {
+                // Render rising skills chart
+                Plotly.newPlot('rising-skills-chart', [{
+                    x: data.skills,
+                    y: data.values,
+                    type: 'bar',
+                    marker: {
+                        color: '#0055ff'
+                    }
+                }], {
+                    margin: { t: 10, r: 10, b: 50, l: 50 },
+                    yaxis: {
+                        title: 'Growth Rate',
+                        gridcolor: 'rgba(255,255,255,0.1)'
+                    },
+                    paper_bgcolor: 'rgba(0,0,0,0)',
+                    plot_bgcolor: 'rgba(0,0,0,0)',
+                    font: {
+                        color: 'rgba(255,255,255,0.8)'
+                    }
+                });
+            });
+        
+        // Fetch declining skills data
+        fetch('/api/declining-skills')
+            .then(response => response.json())
+            .then(data => {
+                // Render declining skills chart
+                Plotly.newPlot('declining-skills-chart', [{
+                    x: data.skills,
+                    y: data.values,
+                    type: 'bar',
+                    marker: {
+                        color: '#ff5555'
+                    }
+                }], {
+                    margin: { t: 10, r: 10, b: 50, l: 50 },
+                    yaxis: {
+                        title: 'Decline Rate',
+                        gridcolor: 'rgba(255,255,255,0.1)'
+                    },
+                    paper_bgcolor: 'rgba(0,0,0,0)',
+                    plot_bgcolor: 'rgba(0,0,0,0)',
+                    font: {
+                        color: 'rgba(255,255,255,0.8)'
+                    }
+                });
+            });
+        
+        // Populate skill dropdown
+        fetch('/api/skills')
+            .then(response => response.json())
+            .then(data => {
+                const dropdown = document.getElementById('skill-detail-dropdown');
+                data.skills.forEach(skill => {
+                    const option = document.createElement('option');
+                    option.value = skill;
+                    option.textContent = skill;
+                    dropdown.appendChild(option);
+                });
+            });
+        
+        // Handle skill selection
+        document.getElementById('skill-detail-dropdown').addEventListener('change', function() {
+            const skill = this.value;
+            if (!skill) return;
+            
+            // Fetch skill detail data
+            fetch(`/api/skill-detail/${skill}`)
+                .then(response => response.json())
+                .then(data => {
+                    // Render skill detail chart
+                    Plotly.newPlot('skill-detail-chart', [{
+                        x: data.dates,
+                        y: data.values,
+                        type: 'scatter',
+                        mode: 'lines+markers',
+                        name: skill,
+                        line: {
+                            color: '#0055ff',
+                            width: 3
+                        },
+                        marker: {
+                            size: 8,
+                            color: '#0055ff'
+                        }
+                    }], {
+                        title: `${skill} Demand Trend`,
+                        margin: { t: 50, r: 10, b: 50, l: 50 },
+                        yaxis: {
+                            title: 'Demand (Normalized)',
+                            gridcolor: 'rgba(255,255,255,0.1)'
+                        },
+                        paper_bgcolor: 'rgba(0,0,0,0)',
+                        plot_bgcolor: 'rgba(0,0,0,0)',
+                        font: {
+                            color: 'rgba(255,255,255,0.8)'
+                        }
+                    });
+                    
+                    // Render forecast chart
+                    Plotly.newPlot('skill-forecast-chart', [{
+                        x: data.forecast_dates,
+                        y: data.forecast,
+                        type: 'scatter',
+                        mode: 'lines',
+                        name: 'Forecast',
+                        line: {
+                            color: '#0055ff',
+                            width: 3
+                        }
+                    }, {
+                        x: data.forecast_dates.concat(data.forecast_dates.slice().reverse()),
+                        y: data.upper_bound.concat(data.lower_bound.slice().reverse()),
+                        fill: 'toself',
+                        fillcolor: 'rgba(0, 85, 255, 0.2)',
+                        line: { color: 'transparent' },
+                        name: 'Confidence Interval',
+                        showlegend: true
+                    }], {
+                        title: `${skill} Demand Forecast`,
+                        margin: { t: 50, r: 10, b: 50, l: 50 },
+                        yaxis: {
+                            title: 'Forecasted Demand',
+                            gridcolor: 'rgba(255,255,255,0.1)'
+                        },
+                        paper_bgcolor: 'rgba(0,0,0,0)',
+                        plot_bgcolor: 'rgba(0,0,0,0)',
+                        font: {
+                            color: 'rgba(255,255,255,0.8)'
+                        }
+                    });
+                });
+        });
+    });
+</script>
+{% endblock %}

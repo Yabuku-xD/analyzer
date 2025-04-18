@@ -1,0 +1,591 @@
+{
+  "nodes": [
+    {
+      "id": "azure",
+      "label": "azure",
+      "size": 16.0
+    },
+    {
+      "id": "tensorflow",
+      "label": "tensorflow",
+      "size": 25.0
+    },
+    {
+      "id": "java",
+      "label": "java",
+      "size": 26.0
+    },
+    {
+      "id": "javascript",
+      "label": "javascript",
+      "size": 28.0
+    },
+    {
+      "id": "python",
+      "label": "python",
+      "size": 21.0
+    },
+    {
+      "id": "leadership",
+      "label": "leadership",
+      "size": 15.0
+    },
+    {
+      "id": "teamwork",
+      "label": "teamwork",
+      "size": 17.0
+    },
+    {
+      "id": "problem solving",
+      "label": "problem solving",
+      "size": 17.0
+    },
+    {
+      "id": "aws",
+      "label": "aws",
+      "size": 25.0
+    },
+    {
+      "id": "communication",
+      "label": "communication",
+      "size": 80.0
+    },
+    {
+      "id": "docker",
+      "label": "docker",
+      "size": 28.0
+    },
+    {
+      "id": "sql",
+      "label": "sql",
+      "size": 19.0
+    },
+    {
+      "id": "kubernetes",
+      "label": "kubernetes",
+      "size": 16.0
+    },
+    {
+      "id": "angular",
+      "label": "angular",
+      "size": 25.0
+    },
+    {
+      "id": "pytorch",
+      "label": "pytorch",
+      "size": 24.0
+    },
+    {
+      "id": "react",
+      "label": "react",
+      "size": 30.0
+    }
+  ],
+  "edges": [
+    {
+      "source": "azure",
+      "target": "tensorflow",
+      "weight": 0.1388888888888889
+    },
+    {
+      "source": "azure",
+      "target": "java",
+      "weight": 0.16666666666666666
+    },
+    {
+      "source": "azure",
+      "target": "javascript",
+      "weight": 0.1891891891891892
+    },
+    {
+      "source": "azure",
+      "target": "teamwork",
+      "weight": 0.13793103448275862
+    },
+    {
+      "source": "azure",
+      "target": "problem solving",
+      "weight": 0.13793103448275862
+    },
+    {
+      "source": "azure",
+      "target": "aws",
+      "weight": 0.1388888888888889
+    },
+    {
+      "source": "azure",
+      "target": "communication",
+      "weight": 0.2
+    },
+    {
+      "source": "azure",
+      "target": "docker",
+      "weight": 0.1891891891891892
+    },
+    {
+      "source": "azure",
+      "target": "sql",
+      "weight": 0.12903225806451613
+    },
+    {
+      "source": "azure",
+      "target": "kubernetes",
+      "weight": 0.10344827586206896
+    },
+    {
+      "source": "azure",
+      "target": "angular",
+      "weight": 0.1388888888888889
+    },
+    {
+      "source": "azure",
+      "target": "pytorch",
+      "weight": 0.1111111111111111
+    },
+    {
+      "source": "azure",
+      "target": "react",
+      "weight": 0.15
+    },
+    {
+      "source": "tensorflow",
+      "target": "java",
+      "weight": 0.21428571428571427
+    },
+    {
+      "source": "tensorflow",
+      "target": "javascript",
+      "weight": 0.2619047619047619
+    },
+    {
+      "source": "tensorflow",
+      "target": "python",
+      "weight": 0.12195121951219512
+    },
+    {
+      "source": "tensorflow",
+      "target": "leadership",
+      "weight": 0.1111111111111111
+    },
+    {
+      "source": "tensorflow",
+      "target": "teamwork",
+      "weight": 0.13513513513513514
+    },
+    {
+      "source": "tensorflow",
+      "target": "problem solving",
+      "weight": 0.13513513513513514
+    },
+    {
+      "source": "tensorflow",
+      "target": "aws",
+      "weight": 0.21951219512195122
+    },
+    {
+      "source": "tensorflow",
+      "target": "communication",
+      "weight": 0.3125
+    },
+    {
+      "source": "tensorflow",
+      "target": "docker",
+      "weight": 0.20454545454545456
+    },
+    {
+      "source": "tensorflow",
+      "target": "sql",
+      "weight": 0.1282051282051282
+    },
+    {
+      "source": "tensorflow",
+      "target": "kubernetes",
+      "weight": 0.1388888888888889
+    },
+    {
+      "source": "tensorflow",
+      "target": "angular",
+      "weight": 0.21951219512195122
+    },
+    {
+      "source": "tensorflow",
+      "target": "pytorch",
+      "weight": 0.225
+    },
+    {
+      "source": "tensorflow",
+      "target": "react",
+      "weight": 0.25
+    },
+    {
+      "source": "java",
+      "target": "javascript",
+      "weight": 0.2
+    },
+    {
+      "source": "java",
+      "target": "python",
+      "weight": 0.14634146341463414
+    },
+    {
+      "source": "java",
+      "target": "leadership",
+      "weight": 0.10810810810810811
+    },
+    {
+      "source": "java",
+      "target": "teamwork",
+      "weight": 0.19444444444444445
+    },
+    {
+      "source": "java",
+      "target": "aws",
+      "weight": 0.21428571428571427
+    },
+    {
+      "source": "java",
+      "target": "communication",
+      "weight": 0.325
+    },
+    {
+      "source": "java",
+      "target": "docker",
+      "weight": 0.10204081632653061
+    },
+    {
+      "source": "java",
+      "target": "sql",
+      "weight": 0.15384615384615385
+    },
+    {
+      "source": "java",
+      "target": "kubernetes",
+      "weight": 0.10526315789473684
+    },
+    {
+      "source": "java",
+      "target": "angular",
+      "weight": 0.18604651162790697
+    },
+    {
+      "source": "java",
+      "target": "pytorch",
+      "weight": 0.19047619047619047
+    },
+    {
+      "source": "java",
+      "target": "react",
+      "weight": 0.14285714285714285
+    },
+    {
+      "source": "javascript",
+      "target": "python",
+      "weight": 0.225
+    },
+    {
+      "source": "javascript",
+      "target": "leadership",
+      "weight": 0.16216216216216217
+    },
+    {
+      "source": "javascript",
+      "target": "problem solving",
+      "weight": 0.18421052631578946
+    },
+    {
+      "source": "javascript",
+      "target": "aws",
+      "weight": 0.20454545454545456
+    },
+    {
+      "source": "javascript",
+      "target": "communication",
+      "weight": 0.35
+    },
+    {
+      "source": "javascript",
+      "target": "docker",
+      "weight": 0.16666666666666666
+    },
+    {
+      "source": "javascript",
+      "target": "sql",
+      "weight": 0.14634146341463414
+    },
+    {
+      "source": "javascript",
+      "target": "kubernetes",
+      "weight": 0.15789473684210525
+    },
+    {
+      "source": "javascript",
+      "target": "angular",
+      "weight": 0.2619047619047619
+    },
+    {
+      "source": "javascript",
+      "target": "pytorch",
+      "weight": 0.18181818181818182
+    },
+    {
+      "source": "javascript",
+      "target": "react",
+      "weight": 0.28888888888888886
+    },
+    {
+      "source": "python",
+      "target": "leadership",
+      "weight": 0.2413793103448276
+    },
+    {
+      "source": "python",
+      "target": "aws",
+      "weight": 0.21052631578947367
+    },
+    {
+      "source": "python",
+      "target": "communication",
+      "weight": 0.2625
+    },
+    {
+      "source": "python",
+      "target": "sql",
+      "weight": 0.17647058823529413
+    },
+    {
+      "source": "python",
+      "target": "angular",
+      "weight": 0.21052631578947367
+    },
+    {
+      "source": "python",
+      "target": "pytorch",
+      "weight": 0.15384615384615385
+    },
+    {
+      "source": "python",
+      "target": "react",
+      "weight": 0.18604651162790697
+    },
+    {
+      "source": "leadership",
+      "target": "teamwork",
+      "weight": 0.10344827586206896
+    },
+    {
+      "source": "leadership",
+      "target": "problem solving",
+      "weight": 0.14285714285714285
+    },
+    {
+      "source": "leadership",
+      "target": "communication",
+      "weight": 0.1875
+    },
+    {
+      "source": "leadership",
+      "target": "docker",
+      "weight": 0.10256410256410256
+    },
+    {
+      "source": "leadership",
+      "target": "pytorch",
+      "weight": 0.11428571428571428
+    },
+    {
+      "source": "leadership",
+      "target": "react",
+      "weight": 0.15384615384615385
+    },
+    {
+      "source": "teamwork",
+      "target": "communication",
+      "weight": 0.2125
+    },
+    {
+      "source": "teamwork",
+      "target": "docker",
+      "weight": 0.21621621621621623
+    },
+    {
+      "source": "teamwork",
+      "target": "kubernetes",
+      "weight": 0.1
+    },
+    {
+      "source": "teamwork",
+      "target": "angular",
+      "weight": 0.16666666666666666
+    },
+    {
+      "source": "teamwork",
+      "target": "react",
+      "weight": 0.14634146341463414
+    },
+    {
+      "source": "problem solving",
+      "target": "aws",
+      "weight": 0.10526315789473684
+    },
+    {
+      "source": "problem solving",
+      "target": "communication",
+      "weight": 0.2125
+    },
+    {
+      "source": "problem solving",
+      "target": "docker",
+      "weight": 0.21621621621621623
+    },
+    {
+      "source": "problem solving",
+      "target": "kubernetes",
+      "weight": 0.17857142857142858
+    },
+    {
+      "source": "problem solving",
+      "target": "angular",
+      "weight": 0.2
+    },
+    {
+      "source": "problem solving",
+      "target": "pytorch",
+      "weight": 0.1388888888888889
+    },
+    {
+      "source": "problem solving",
+      "target": "react",
+      "weight": 0.14634146341463414
+    },
+    {
+      "source": "aws",
+      "target": "communication",
+      "weight": 0.3125
+    },
+    {
+      "source": "aws",
+      "target": "docker",
+      "weight": 0.10416666666666667
+    },
+    {
+      "source": "aws",
+      "target": "sql",
+      "weight": 0.1
+    },
+    {
+      "source": "aws",
+      "target": "kubernetes",
+      "weight": 0.1388888888888889
+    },
+    {
+      "source": "aws",
+      "target": "angular",
+      "weight": 0.25
+    },
+    {
+      "source": "aws",
+      "target": "pytorch",
+      "weight": 0.2564102564102564
+    },
+    {
+      "source": "aws",
+      "target": "react",
+      "weight": 0.2222222222222222
+    },
+    {
+      "source": "communication",
+      "target": "docker",
+      "weight": 0.35
+    },
+    {
+      "source": "communication",
+      "target": "sql",
+      "weight": 0.2375
+    },
+    {
+      "source": "communication",
+      "target": "kubernetes",
+      "weight": 0.2
+    },
+    {
+      "source": "communication",
+      "target": "angular",
+      "weight": 0.3125
+    },
+    {
+      "source": "communication",
+      "target": "pytorch",
+      "weight": 0.3
+    },
+    {
+      "source": "communication",
+      "target": "react",
+      "weight": 0.375
+    },
+    {
+      "source": "docker",
+      "target": "kubernetes",
+      "weight": 0.1282051282051282
+    },
+    {
+      "source": "docker",
+      "target": "angular",
+      "weight": 0.2619047619047619
+    },
+    {
+      "source": "docker",
+      "target": "pytorch",
+      "weight": 0.18181818181818182
+    },
+    {
+      "source": "docker",
+      "target": "react",
+      "weight": 0.23404255319148937
+    },
+    {
+      "source": "sql",
+      "target": "kubernetes",
+      "weight": 0.16666666666666666
+    },
+    {
+      "source": "sql",
+      "target": "angular",
+      "weight": 0.1
+    },
+    {
+      "source": "sql",
+      "target": "pytorch",
+      "weight": 0.13157894736842105
+    },
+    {
+      "source": "sql",
+      "target": "react",
+      "weight": 0.225
+    },
+    {
+      "source": "kubernetes",
+      "target": "angular",
+      "weight": 0.17142857142857143
+    },
+    {
+      "source": "kubernetes",
+      "target": "react",
+      "weight": 0.15
+    },
+    {
+      "source": "angular",
+      "target": "pytorch",
+      "weight": 0.1951219512195122
+    },
+    {
+      "source": "angular",
+      "target": "react",
+      "weight": 0.1702127659574468
+    },
+    {
+      "source": "pytorch",
+      "target": "react",
+      "weight": 0.2
+    }
+  ]
+}

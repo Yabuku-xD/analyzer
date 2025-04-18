@@ -1,0 +1,60 @@
+2025-04-16 23:15:01,278 - run_scraper - INFO - Running scraper with the following parameters:
+2025-04-16 23:15:01,278 - run_scraper - INFO - Queries: ['data scientist', 'data analyst', 'machine learning engineer', 'software engineer', 'product manager']
+2025-04-16 23:15:01,278 - run_scraper - INFO - Locations: ['New York', 'San Francisco', 'Seattle', 'Austin', 'Remote']
+2025-04-16 23:15:01,278 - run_scraper - INFO - Sources: ['linkedin', 'indeed']
+2025-04-16 23:15:01,278 - run_scraper - INFO - Limit per query: 100
+2025-04-16 23:15:01,278 - run_scraper - INFO - Output directory: C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\raw
+2025-04-16 23:36:57,709 - run_scraper - INFO - Running scraper with the following parameters:
+2025-04-16 23:36:57,709 - run_scraper - INFO - Queries: ['data scientist']
+2025-04-16 23:36:57,709 - run_scraper - INFO - Locations: ['New York']
+2025-04-16 23:36:57,709 - run_scraper - INFO - Sources: ['linkedin', 'indeed']
+2025-04-16 23:36:57,709 - run_scraper - INFO - Limit per query: 10
+2025-04-16 23:36:57,709 - run_scraper - INFO - Output directory: C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\raw
+2025-04-16 23:45:18,415 - run_scraper - INFO - Running scraper with the following parameters:
+2025-04-16 23:45:18,415 - run_scraper - INFO - Queries: ['data scientist', 'data analyst', 'machine learning engineer', 'software engineer', 'product manager']
+2025-04-16 23:45:18,415 - run_scraper - INFO - Locations: ['New York', 'San Francisco', 'Seattle', 'Austin', 'Remote']
+2025-04-16 23:45:18,415 - run_scraper - INFO - Sources: ['linkedin', 'indeed']
+2025-04-16 23:45:18,415 - run_scraper - INFO - Limit per query: 100
+2025-04-16 23:45:18,415 - run_scraper - INFO - Output directory: C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\raw
+2025-04-17 08:18:57,234 - run_scraper - INFO - Running scraper with the following parameters:
+2025-04-17 08:18:57,234 - run_scraper - INFO - Queries: ['data scientist']
+2025-04-17 08:18:57,234 - run_scraper - INFO - Locations: ['New York']
+2025-04-17 08:18:57,234 - run_scraper - INFO - Sources: ['mock']
+2025-04-17 08:18:57,234 - run_scraper - INFO - Limit per query: 20
+2025-04-17 08:18:57,234 - run_scraper - INFO - Output directory: C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\raw
+2025-04-17 08:18:57,236 - run_scraper - INFO - Scraping completed
+2025-04-17 08:32:53,117 - run_scraper - INFO - Running scraper with the following parameters:
+2025-04-17 08:32:53,117 - run_scraper - INFO - Queries: ['data scientist']
+2025-04-17 08:32:53,117 - run_scraper - INFO - Locations: ['New York']
+2025-04-17 08:32:53,117 - run_scraper - INFO - Sources: ['mock']
+2025-04-17 08:32:53,117 - run_scraper - INFO - Limit per query: 20
+2025-04-17 08:32:53,117 - run_scraper - INFO - Output directory: C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\raw
+2025-04-17 08:32:53,120 - run_scraper - INFO - Scraping completed
+2025-04-17 08:34:40,167 - run_scraper - INFO - Running scraper with the following parameters:
+2025-04-17 08:34:40,167 - run_scraper - INFO - Queries: ['data scientist', 'data analyst']
+2025-04-17 08:34:40,167 - run_scraper - INFO - Locations: ['New York', 'Remote']
+2025-04-17 08:34:40,167 - run_scraper - INFO - Sources: ['mock']
+2025-04-17 08:34:40,167 - run_scraper - INFO - Limit per query: 20
+2025-04-17 08:34:40,167 - run_scraper - INFO - Output directory: C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\raw
+2025-04-17 08:34:40,169 - run_scraper - INFO - Scraping completed
+2025-04-17 08:38:22,723 - run_scraper - INFO - Running scraper with the following parameters:
+2025-04-17 08:38:22,723 - run_scraper - INFO - Queries: ['data scientist', 'data analyst']
+2025-04-17 08:38:22,723 - run_scraper - INFO - Locations: ['New York', 'Remote']
+2025-04-17 08:38:22,723 - run_scraper - INFO - Sources: ['mock']
+2025-04-17 08:38:22,723 - run_scraper - INFO - Limit per query: 20
+2025-04-17 08:38:22,723 - run_scraper - INFO - Output directory: C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\raw
+2025-04-17 08:38:22,725 - run_scraper - INFO - Scraping completed
+2025-04-17 09:14:23,883 - run_scraper - INFO - Running scraper with the following parameters:
+2025-04-17 09:14:23,884 - run_scraper - INFO - Queries: ['data scientist', 'data analyst']
+2025-04-17 09:14:23,884 - run_scraper - INFO - Locations: ['New York', 'Remote']
+2025-04-17 09:14:23,884 - run_scraper - INFO - Sources: ['mock']
+2025-04-17 09:14:23,884 - run_scraper - INFO - Limit per query: 20
+2025-04-17 09:14:23,884 - run_scraper - INFO - Output directory: C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\raw
+2025-04-17 09:14:23,885 - run_scraper - INFO - Scraping completed
+2025-04-17 09:16:24,386 - run_scraper - INFO - Running scraper with the following parameters:
+2025-04-17 09:16:24,386 - run_scraper - INFO - Queries: ['data scientist', 'data analyst']
+2025-04-17 09:16:24,386 - run_scraper - INFO - Locations: ['New York', 'Remote']
+2025-04-17 09:16:24,386 - run_scraper - INFO - Sources: ['mock']
+2025-04-17 09:16:24,386 - run_scraper - INFO - Limit per query: 20
+2025-04-17 09:16:24,386 - run_scraper - INFO - Output directory: C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\raw
+2025-04-17 09:16:24,389 - run_scraper - INFO - Scraping completed

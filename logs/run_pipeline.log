@@ -1,0 +1,467 @@
+2025-04-16 23:15:00,753 - run_pipeline - INFO - Running pipeline with the following parameters:
+2025-04-16 23:15:00,753 - run_pipeline - INFO - Queries: ['data scientist', 'data analyst', 'machine learning engineer', 'software engineer', 'product manager']
+2025-04-16 23:15:00,753 - run_pipeline - INFO - Locations: ['New York', 'San Francisco', 'Seattle', 'Austin', 'Remote']
+2025-04-16 23:15:00,753 - run_pipeline - INFO - Sources: ['linkedin', 'indeed']
+2025-04-16 23:15:00,753 - run_pipeline - INFO - Limit per query: 100
+2025-04-16 23:15:00,753 - run_pipeline - INFO - Skip scraping: False
+2025-04-16 23:15:00,754 - run_pipeline - INFO - Skip processing: False
+2025-04-16 23:15:00,754 - run_pipeline - INFO - Skip modeling: False
+2025-04-16 23:15:00,754 - run_pipeline - INFO - Running command: C:\Users\Yabuku\AppData\Local\Programs\Python\Python311\python.exe C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\scripts\run_scraper.py --queries data scientist data analyst machine learning engineer software engineer product manager --locations New York San Francisco Seattle Austin Remote --sources linkedin indeed --limit 100
+2025-04-16 23:36:57,256 - run_pipeline - INFO - Running pipeline with the following parameters:
+2025-04-16 23:36:57,256 - run_pipeline - INFO - Queries: ['data scientist']
+2025-04-16 23:36:57,256 - run_pipeline - INFO - Locations: ['New York']
+2025-04-16 23:36:57,256 - run_pipeline - INFO - Sources: ['linkedin', 'indeed']
+2025-04-16 23:36:57,256 - run_pipeline - INFO - Limit per query: 10
+2025-04-16 23:36:57,256 - run_pipeline - INFO - Skip scraping: False
+2025-04-16 23:36:57,256 - run_pipeline - INFO - Skip processing: False
+2025-04-16 23:36:57,256 - run_pipeline - INFO - Skip modeling: False
+2025-04-16 23:36:57,256 - run_pipeline - INFO - Running command: C:\Users\Yabuku\AppData\Local\Programs\Python\Python311\python.exe C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\scripts\run_scraper.py --queries data scientist --locations New York --sources linkedin indeed --limit 10
+2025-04-16 23:40:43,619 - run_pipeline - INFO - Running pipeline with the following parameters:
+2025-04-16 23:40:43,619 - run_pipeline - INFO - Queries: ['data scientist', 'data analyst', 'machine learning engineer', 'software engineer', 'product manager']
+2025-04-16 23:40:43,619 - run_pipeline - INFO - Locations: ['New York', 'San Francisco', 'Seattle', 'Austin', 'Remote']
+2025-04-16 23:40:43,619 - run_pipeline - INFO - Sources: ['linkedin', 'indeed']
+2025-04-16 23:40:43,619 - run_pipeline - INFO - Limit per query: 100
+2025-04-16 23:40:43,619 - run_pipeline - INFO - Skip scraping: True
+2025-04-16 23:40:43,619 - run_pipeline - INFO - Skip processing: False
+2025-04-16 23:40:43,619 - run_pipeline - INFO - Skip modeling: False
+2025-04-16 23:40:43,619 - run_pipeline - INFO - Running command: C:\Users\Yabuku\AppData\Local\Programs\Python\Python311\python.exe C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\scripts\process_data.py --update-skill-dict
+2025-04-16 23:40:49,669 - run_pipeline - ERROR - Traceback (most recent call last):
+2025-04-16 23:40:49,669 - run_pipeline - ERROR - File "C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\scripts\process_data.py", line 17, in <module>
+2025-04-16 23:40:49,669 - run_pipeline - ERROR - from src.data.processor import JobPostingProcessor, process_all_job_data
+2025-04-16 23:40:49,669 - run_pipeline - ERROR - File "C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\src\data\processor.py", line 28, in <module>
+2025-04-16 23:40:49,669 - run_pipeline - ERROR - nlp = spacy.load("en_core_web_md")
+2025-04-16 23:40:49,669 - run_pipeline - ERROR - ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-04-16 23:40:49,669 - run_pipeline - ERROR - File "C:\Users\Yabuku\AppData\Local\Programs\Python\Python311\Lib\site-packages\spacy\__init__.py", line 51, in load
+2025-04-16 23:40:49,669 - run_pipeline - ERROR - return util.load_model(
+2025-04-16 23:40:49,669 - run_pipeline - ERROR - ^^^^^^^^^^^^^^^^
+2025-04-16 23:40:49,669 - run_pipeline - ERROR - File "C:\Users\Yabuku\AppData\Local\Programs\Python\Python311\Lib\site-packages\spacy\util.py", line 472, in load_model
+2025-04-16 23:40:49,678 - run_pipeline - ERROR - raise IOError(Errors.E050.format(name=name))
+2025-04-16 23:40:49,678 - run_pipeline - ERROR - OSError: [E050] Can't find model 'en_core_web_md'. It doesn't seem to be a Python package or a valid path to a data directory.
+2025-04-16 23:40:49,696 - run_pipeline - ERROR - Command failed with exit code 1
+2025-04-16 23:40:49,696 - run_pipeline - ERROR - Processing failed, stopping pipeline
+2025-04-16 23:42:02,119 - run_pipeline - INFO - Running pipeline with the following parameters:
+2025-04-16 23:42:02,119 - run_pipeline - INFO - Queries: ['data scientist', 'data analyst', 'machine learning engineer', 'software engineer', 'product manager']
+2025-04-16 23:42:02,119 - run_pipeline - INFO - Locations: ['New York', 'San Francisco', 'Seattle', 'Austin', 'Remote']
+2025-04-16 23:42:02,119 - run_pipeline - INFO - Sources: ['linkedin', 'indeed']
+2025-04-16 23:42:02,119 - run_pipeline - INFO - Limit per query: 100
+2025-04-16 23:42:02,119 - run_pipeline - INFO - Skip scraping: True
+2025-04-16 23:42:02,119 - run_pipeline - INFO - Skip processing: False
+2025-04-16 23:42:02,119 - run_pipeline - INFO - Skip modeling: True
+2025-04-16 23:42:02,119 - run_pipeline - INFO - Running command: C:\Users\Yabuku\AppData\Local\Programs\Python\Python311\python.exe C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\scripts\process_data.py --update-skill-dict
+2025-04-16 23:42:25,401 - run_pipeline - ERROR - 2025-04-16 23:42:19.073268: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-04-16 23:42:25,401 - run_pipeline - ERROR - 2025-04-16 23:42:21.111690: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-04-16 23:42:25,401 - run_pipeline - ERROR - 2025-04-16 23:42:24,272 - process_data - INFO - Processing data with the following parameters:
+2025-04-16 23:42:25,401 - run_pipeline - ERROR - 2025-04-16 23:42:24,272 - process_data - INFO - Input directory: C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\raw
+2025-04-16 23:42:25,401 - run_pipeline - ERROR - 2025-04-16 23:42:24,272 - process_data - INFO - Output directory: C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\processed
+2025-04-16 23:42:25,406 - run_pipeline - ERROR - 2025-04-16 23:42:24,272 - process_data - INFO - Update skill dictionary: True
+2025-04-16 23:42:25,406 - run_pipeline - ERROR - 2025-04-16 23:42:24,272 - process_data - WARNING - No processed files found to update skill dictionary
+2025-04-16 23:42:25,406 - run_pipeline - ERROR - 2025-04-16 23:42:24,272 - process_data - INFO - Processing completed
+2025-04-16 23:42:25,451 - run_pipeline - INFO - Command completed successfully
+2025-04-16 23:42:25,451 - run_pipeline - INFO - Pipeline completed successfully
+2025-04-16 23:45:17,950 - run_pipeline - INFO - Running pipeline with the following parameters:
+2025-04-16 23:45:17,951 - run_pipeline - INFO - Queries: ['data scientist', 'data analyst', 'machine learning engineer', 'software engineer', 'product manager']
+2025-04-16 23:45:17,951 - run_pipeline - INFO - Locations: ['New York', 'San Francisco', 'Seattle', 'Austin', 'Remote']
+2025-04-16 23:45:17,951 - run_pipeline - INFO - Sources: ['linkedin', 'indeed']
+2025-04-16 23:45:17,951 - run_pipeline - INFO - Limit per query: 100
+2025-04-16 23:45:17,951 - run_pipeline - INFO - Skip scraping: False
+2025-04-16 23:45:17,951 - run_pipeline - INFO - Skip processing: False
+2025-04-16 23:45:17,951 - run_pipeline - INFO - Skip modeling: False
+2025-04-16 23:45:17,951 - run_pipeline - INFO - Running command: C:\Users\Yabuku\AppData\Local\Programs\Python\Python311\python.exe C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\scripts\run_scraper.py --queries data scientist data analyst machine learning engineer software engineer product manager --locations New York San Francisco Seattle Austin Remote --sources linkedin indeed --limit 100
+2025-04-16 23:53:04,269 - run_pipeline - ERROR - 2025-04-16 23:45:18,415 - run_scraper - INFO - Running scraper with the following parameters:
+2025-04-16 23:53:04,270 - run_pipeline - ERROR - 2025-04-16 23:45:18,415 - run_scraper - INFO - Queries: ['data scientist', 'data analyst', 'machine learning engineer', 'software engineer', 'product manager']
+2025-04-16 23:53:04,270 - run_pipeline - ERROR - 2025-04-16 23:45:18,415 - run_scraper - INFO - Locations: ['New York', 'San Francisco', 'Seattle', 'Austin', 'Remote']
+2025-04-16 23:53:04,271 - run_pipeline - ERROR - 2025-04-16 23:45:18,415 - run_scraper - INFO - Sources: ['linkedin', 'indeed']
+2025-04-16 23:53:04,271 - run_pipeline - ERROR - 2025-04-16 23:45:18,415 - run_scraper - INFO - Limit per query: 100
+2025-04-16 23:53:04,271 - run_pipeline - ERROR - 2025-04-16 23:45:18,415 - run_scraper - INFO - Output directory: C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\raw
+2025-04-16 23:53:04,271 - run_pipeline - ERROR - 2025-04-16 23:45:18,415 - scraper - INFO - Scraping LinkedIn for 'data scientist' in 'New York'
+2025-04-16 23:53:04,272 - run_pipeline - ERROR - 2025-04-16 23:45:18,645 - scraper - ERROR - Error running linkedin scraper: BrowserType.launch: Executable doesn't exist at C:\Users\Yabuku\AppData\Local\ms-playwright\chromium_headless_shell-1161\chrome-win\headless_shell.exe
+2025-04-16 23:53:04,274 - run_pipeline - ERROR - \u2554\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2557
+2025-04-16 23:53:04,276 - run_pipeline - ERROR - \u2551 Looks like Playwright was just installed or updated.       \u2551
+2025-04-16 23:53:04,276 - run_pipeline - ERROR - \u2551 Please run the following command to download new browsers: \u2551
+2025-04-16 23:53:04,276 - run_pipeline - ERROR - \u2551                                                            \u2551
+2025-04-16 23:53:04,277 - run_pipeline - ERROR - \u2551     playwright install                                     \u2551
+2025-04-16 23:53:04,277 - run_pipeline - ERROR - \u2551                                                            \u2551
+2025-04-16 23:53:04,277 - run_pipeline - ERROR - \u2551 <3 Playwright Team                                         \u2551
+2025-04-16 23:53:04,277 - run_pipeline - ERROR - \u255a\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u255d
+2025-04-16 23:53:04,277 - run_pipeline - ERROR - --- Logging error ---
+2025-04-16 23:53:04,277 - run_pipeline - ERROR - Traceback (most recent call last):
+2025-04-16 23:53:04,278 - run_pipeline - ERROR - File "C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\src\data\scraper.py", line 335, in run_scraper
+2025-04-16 23:53:04,278 - run_pipeline - ERROR - results = scraper.scrape(query, location, limit_per_query)
+2025-04-16 23:53:04,278 - run_pipeline - ERROR - ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-04-16 23:53:04,278 - run_pipeline - ERROR - File "C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\src\data\scraper.py", line 98, in scrape
+2025-04-16 23:53:04,278 - run_pipeline - ERROR - browser = p.chromium.launch(headless=True)
+2025-04-16 23:53:04,279 - run_pipeline - ERROR - ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-04-16 23:53:04,279 - run_pipeline - ERROR - File "C:\Users\Yabuku\AppData\Local\Programs\Python\Python311\Lib\site-packages\playwright\sync_api\_generated.py", line 14493, in launch
+2025-04-17 08:18:56,680 - run_pipeline - INFO - Running pipeline with the following parameters:
+2025-04-17 08:18:56,680 - run_pipeline - INFO - Queries: ['data scientist']
+2025-04-17 08:18:56,680 - run_pipeline - INFO - Locations: ['New York']
+2025-04-17 08:18:56,680 - run_pipeline - INFO - Sources: ['mock']
+2025-04-17 08:18:56,680 - run_pipeline - INFO - Limit per query: 20
+2025-04-17 08:18:56,681 - run_pipeline - INFO - Skip scraping: False
+2025-04-17 08:18:56,681 - run_pipeline - INFO - Skip processing: False
+2025-04-17 08:18:56,681 - run_pipeline - INFO - Skip modeling: False
+2025-04-17 08:18:56,681 - run_pipeline - INFO - Running command: C:\Users\Yabuku\AppData\Local\Programs\Python\Python311\python.exe C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\scripts\run_scraper.py --queries data scientist --locations New York --sources mock --limit 20
+2025-04-17 08:18:57,284 - run_pipeline - ERROR - 2025-04-17 08:18:57,234 - run_scraper - INFO - Running scraper with the following parameters:
+2025-04-17 08:18:57,285 - run_pipeline - ERROR - 2025-04-17 08:18:57,234 - run_scraper - INFO - Queries: ['data scientist']
+2025-04-17 08:18:57,285 - run_pipeline - ERROR - 2025-04-17 08:18:57,234 - run_scraper - INFO - Locations: ['New York']
+2025-04-17 08:18:57,285 - run_pipeline - ERROR - 2025-04-17 08:18:57,234 - run_scraper - INFO - Sources: ['mock']
+2025-04-17 08:18:57,285 - run_pipeline - ERROR - 2025-04-17 08:18:57,234 - run_scraper - INFO - Limit per query: 20
+2025-04-17 08:18:57,286 - run_pipeline - ERROR - 2025-04-17 08:18:57,234 - run_scraper - INFO - Output directory: C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\raw
+2025-04-17 08:18:57,286 - run_pipeline - ERROR - 2025-04-17 08:18:57,234 - scraper - INFO - Generating mock data for 1 queries and 1 locations
+2025-04-17 08:18:57,286 - run_pipeline - ERROR - 2025-04-17 08:18:57,235 - scraper - INFO - Generated 20 mock job postings saved to data\raw\mock_data_20250417_081857.json
+2025-04-17 08:18:57,286 - run_pipeline - ERROR - 2025-04-17 08:18:57,236 - scraper - INFO - Saved 20 total job postings to data\raw\all_results_20250417_081857.json
+2025-04-17 08:18:57,286 - run_pipeline - ERROR - 2025-04-17 08:18:57,236 - run_scraper - INFO - Scraping completed
+2025-04-17 08:18:57,289 - run_pipeline - INFO - Command completed successfully
+2025-04-17 08:18:57,289 - run_pipeline - INFO - Running command: C:\Users\Yabuku\AppData\Local\Programs\Python\Python311\python.exe C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\scripts\process_data.py --update-skill-dict
+2025-04-17 08:32:52,650 - run_pipeline - INFO - Running pipeline with the following parameters:
+2025-04-17 08:32:52,650 - run_pipeline - INFO - Queries: ['data scientist']
+2025-04-17 08:32:52,650 - run_pipeline - INFO - Locations: ['New York']
+2025-04-17 08:32:52,650 - run_pipeline - INFO - Sources: ['mock']
+2025-04-17 08:32:52,650 - run_pipeline - INFO - Limit per query: 20
+2025-04-17 08:32:52,650 - run_pipeline - INFO - Skip scraping: False
+2025-04-17 08:32:52,650 - run_pipeline - INFO - Skip processing: False
+2025-04-17 08:32:52,650 - run_pipeline - INFO - Skip modeling: False
+2025-04-17 08:32:52,651 - run_pipeline - INFO - Running command: C:\Users\Yabuku\AppData\Local\Programs\Python\Python311\python.exe C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\scripts\run_scraper.py --queries data scientist --locations New York --sources mock --limit 20
+2025-04-17 08:32:53,170 - run_pipeline - ERROR - 2025-04-17 08:32:53,117 - run_scraper - INFO - Running scraper with the following parameters:
+2025-04-17 08:32:53,170 - run_pipeline - ERROR - 2025-04-17 08:32:53,117 - run_scraper - INFO - Queries: ['data scientist']
+2025-04-17 08:32:53,170 - run_pipeline - ERROR - 2025-04-17 08:32:53,117 - run_scraper - INFO - Locations: ['New York']
+2025-04-17 08:32:53,171 - run_pipeline - ERROR - 2025-04-17 08:32:53,117 - run_scraper - INFO - Sources: ['mock']
+2025-04-17 08:32:53,171 - run_pipeline - ERROR - 2025-04-17 08:32:53,117 - run_scraper - INFO - Limit per query: 20
+2025-04-17 08:32:53,171 - run_pipeline - ERROR - 2025-04-17 08:32:53,117 - run_scraper - INFO - Output directory: C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\raw
+2025-04-17 08:32:53,171 - run_pipeline - ERROR - 2025-04-17 08:32:53,117 - scraper - INFO - Generating mock data for 1 queries and 1 locations
+2025-04-17 08:32:53,171 - run_pipeline - ERROR - 2025-04-17 08:32:53,119 - scraper - INFO - Generated 20 mock job postings saved to data\raw\mock_data_20250417_083253.json
+2025-04-17 08:32:53,171 - run_pipeline - ERROR - 2025-04-17 08:32:53,120 - scraper - INFO - Saved 20 total job postings to data\raw\all_results_20250417_083253.json
+2025-04-17 08:32:53,171 - run_pipeline - ERROR - 2025-04-17 08:32:53,120 - run_scraper - INFO - Scraping completed
+2025-04-17 08:32:53,175 - run_pipeline - INFO - Command completed successfully
+2025-04-17 08:32:53,175 - run_pipeline - INFO - Running command: C:\Users\Yabuku\AppData\Local\Programs\Python\Python311\python.exe C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\scripts\process_data.py --update-skill-dict
+2025-04-17 08:32:53,861 - run_pipeline - ERROR - 2025-04-17 08:32:53,449 - process_data - INFO - Processing data with the following parameters:
+2025-04-17 08:32:53,861 - run_pipeline - ERROR - 2025-04-17 08:32:53,449 - process_data - INFO - Input directory: C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\raw
+2025-04-17 08:32:53,861 - run_pipeline - ERROR - 2025-04-17 08:32:53,449 - process_data - INFO - Output directory: C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\processed
+2025-04-17 08:32:53,861 - run_pipeline - ERROR - 2025-04-17 08:32:53,449 - process_data - INFO - Update skill dictionary: True
+2025-04-17 08:32:53,861 - run_pipeline - ERROR - 2025-04-17 08:32:53,449 - process_data - INFO - Workers: auto
+2025-04-17 08:32:53,861 - run_pipeline - ERROR - 2025-04-17 08:32:53,449 - process_data - INFO - Fast mode: False
+2025-04-17 08:32:53,862 - run_pipeline - ERROR - 2025-04-17 08:32:53,449 - process_data - INFO - Processing 4 files using 4 workers
+2025-04-17 08:32:53,862 - run_pipeline - ERROR - 2025-04-17 08:32:53,815 - process_data - ERROR - Error processing file C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\raw\all_results_20250417_081857.json: 'dict' object has no attribute 'to_csv'
+2025-04-17 08:32:53,862 - run_pipeline - ERROR - 2025-04-17 08:32:53,817 - process_data - ERROR - Error processing file C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\raw\mock_data_20250417_081857.json: 'dict' object has no attribute 'to_csv'
+2025-04-17 08:32:53,862 - run_pipeline - ERROR - 2025-04-17 08:32:53,822 - process_data - ERROR - Error processing file C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\raw\mock_data_20250417_083253.json: 'dict' object has no attribute 'to_csv'
+2025-04-17 08:32:53,862 - run_pipeline - ERROR - 2025-04-17 08:32:53,823 - process_data - ERROR - Error processing file C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\raw\all_results_20250417_083253.json: 'dict' object has no attribute 'to_csv'
+2025-04-17 08:32:53,862 - run_pipeline - ERROR - 2025-04-17 08:32:53,830 - process_data - INFO - Processing completed
+2025-04-17 08:32:53,865 - run_pipeline - INFO - Command completed successfully
+2025-04-17 08:32:53,865 - run_pipeline - INFO - Running command: C:\Users\Yabuku\AppData\Local\Programs\Python\Python311\python.exe C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\scripts\train_models.py --models all
+2025-04-17 08:32:55,930 - run_pipeline - ERROR - 2025-04-17 08:32:55,775 - train_models - INFO - Training models with the following parameters:
+2025-04-17 08:32:55,930 - run_pipeline - ERROR - 2025-04-17 08:32:55,775 - train_models - INFO - Input directory: C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\processed
+2025-04-17 08:32:55,931 - run_pipeline - ERROR - 2025-04-17 08:32:55,775 - train_models - INFO - Output directory: C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\models
+2025-04-17 08:32:55,931 - run_pipeline - ERROR - 2025-04-17 08:32:55,775 - train_models - INFO - Models to train: ['all']
+2025-04-17 08:32:55,931 - run_pipeline - ERROR - 2025-04-17 08:32:55,776 - train_models - INFO - Using processed data from C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\processed\all_results_20250417_081857_processed.csv
+2025-04-17 08:32:55,931 - run_pipeline - ERROR - 2025-04-17 08:32:55,776 - skill_relationships - INFO - Analyzing skill relationships in C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\processed\all_results_20250417_081857_processed.csv
+2025-04-17 08:32:55,931 - run_pipeline - ERROR - 2025-04-17 08:32:55,779 - skill_relationships - INFO - Building skill co-occurrence matrix
+2025-04-17 08:32:55,931 - run_pipeline - ERROR - 2025-04-17 08:32:55,797 - skill_relationships - INFO - Building skill relationship graph
+2025-04-17 08:32:55,931 - run_pipeline - ERROR - 2025-04-17 08:32:55,799 - train_models - ERROR - Error training relationships model: Object of type int64 is not JSON serializable
+2025-04-17 08:32:55,931 - run_pipeline - ERROR - 2025-04-17 08:32:55,799 - time_series - INFO - Analyzing skill trends in C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\processed\all_results_20250417_081857_processed.csv
+2025-04-17 08:32:55,931 - run_pipeline - ERROR - 2025-04-17 08:32:55,800 - time_series - ERROR - No skill columns found in data
+2025-04-17 08:32:55,931 - run_pipeline - ERROR - 2025-04-17 08:32:55,800 - train_models - INFO - Completed skill trend analysis
+2025-04-17 08:32:55,932 - run_pipeline - ERROR - 2025-04-17 08:32:55,800 - predictive - INFO - Training predictive models with data from C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\processed\all_results_20250417_081857_processed.csv
+2025-04-17 08:32:55,932 - run_pipeline - ERROR - 2025-04-17 08:32:55,801 - predictive - ERROR - No skill columns found in data
+2025-04-17 08:32:55,932 - run_pipeline - ERROR - 2025-04-17 08:32:55,801 - train_models - INFO - Completed predictive model training
+2025-04-17 08:32:55,932 - run_pipeline - ERROR - 2025-04-17 08:32:55,801 - train_models - INFO - Model training completed
+2025-04-17 08:32:55,943 - run_pipeline - INFO - Command completed successfully
+2025-04-17 08:32:55,943 - run_pipeline - INFO - Pipeline completed successfully
+2025-04-17 08:34:39,722 - run_pipeline - INFO - Running pipeline with the following parameters:
+2025-04-17 08:34:39,722 - run_pipeline - INFO - Queries: ['data scientist', 'data analyst']
+2025-04-17 08:34:39,722 - run_pipeline - INFO - Locations: ['New York', 'Remote']
+2025-04-17 08:34:39,722 - run_pipeline - INFO - Sources: ['mock']
+2025-04-17 08:34:39,722 - run_pipeline - INFO - Limit per query: 20
+2025-04-17 08:34:39,722 - run_pipeline - INFO - Skip scraping: False
+2025-04-17 08:34:39,722 - run_pipeline - INFO - Skip processing: False
+2025-04-17 08:34:39,723 - run_pipeline - INFO - Skip modeling: False
+2025-04-17 08:34:39,723 - run_pipeline - INFO - Running command: C:\Users\Yabuku\AppData\Local\Programs\Python\Python311\python.exe C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\scripts\run_scraper.py --queries data scientist data analyst --locations New York Remote --sources mock --limit 20
+2025-04-17 08:34:40,219 - run_pipeline - ERROR - 2025-04-17 08:34:40,167 - run_scraper - INFO - Running scraper with the following parameters:
+2025-04-17 08:34:40,219 - run_pipeline - ERROR - 2025-04-17 08:34:40,167 - run_scraper - INFO - Queries: ['data scientist', 'data analyst']
+2025-04-17 08:34:40,219 - run_pipeline - ERROR - 2025-04-17 08:34:40,167 - run_scraper - INFO - Locations: ['New York', 'Remote']
+2025-04-17 08:34:40,219 - run_pipeline - ERROR - 2025-04-17 08:34:40,167 - run_scraper - INFO - Sources: ['mock']
+2025-04-17 08:34:40,219 - run_pipeline - ERROR - 2025-04-17 08:34:40,167 - run_scraper - INFO - Limit per query: 20
+2025-04-17 08:34:40,219 - run_pipeline - ERROR - 2025-04-17 08:34:40,167 - run_scraper - INFO - Output directory: C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\raw
+2025-04-17 08:34:40,219 - run_pipeline - ERROR - 2025-04-17 08:34:40,167 - scraper - INFO - Generating mock data for 2 queries and 2 locations
+2025-04-17 08:34:40,219 - run_pipeline - ERROR - 2025-04-17 08:34:40,168 - scraper - INFO - Generated 80 mock job postings saved to data\raw\mock_data_20250417_083440.json
+2025-04-17 08:34:40,219 - run_pipeline - ERROR - 2025-04-17 08:34:40,169 - scraper - INFO - Saved 80 total job postings to data\raw\all_results_20250417_083440.json
+2025-04-17 08:34:40,220 - run_pipeline - ERROR - 2025-04-17 08:34:40,169 - run_scraper - INFO - Scraping completed
+2025-04-17 08:34:40,223 - run_pipeline - INFO - Command completed successfully
+2025-04-17 08:34:40,223 - run_pipeline - INFO - Running command: C:\Users\Yabuku\AppData\Local\Programs\Python\Python311\python.exe C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\scripts\process_data.py --update-skill-dict
+2025-04-17 08:34:41,104 - run_pipeline - ERROR - 2025-04-17 08:34:40,584 - process_data - INFO - Processing data with the following parameters:
+2025-04-17 08:34:41,104 - run_pipeline - ERROR - 2025-04-17 08:34:40,584 - process_data - INFO - Input directory: C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\raw
+2025-04-17 08:34:41,104 - run_pipeline - ERROR - 2025-04-17 08:34:40,584 - process_data - INFO - Output directory: C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\processed
+2025-04-17 08:34:41,104 - run_pipeline - ERROR - 2025-04-17 08:34:40,584 - process_data - INFO - Update skill dictionary: True
+2025-04-17 08:34:41,104 - run_pipeline - ERROR - 2025-04-17 08:34:40,585 - process_data - INFO - Workers: auto
+2025-04-17 08:34:41,104 - run_pipeline - ERROR - 2025-04-17 08:34:40,585 - process_data - INFO - Fast mode: False
+2025-04-17 08:34:41,105 - run_pipeline - ERROR - 2025-04-17 08:34:40,585 - process_data - INFO - Processing 6 files using 6 workers
+2025-04-17 08:34:41,105 - run_pipeline - ERROR - 2025-04-17 08:34:41,020 - process_data - INFO - Processed 20 job postings from C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\raw\mock_data_20250417_081857.json
+2025-04-17 08:34:41,105 - run_pipeline - ERROR - 2025-04-17 08:34:41,020 - process_data - INFO - Processed 20 job postings from C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\raw\all_results_20250417_083253.json
+2025-04-17 08:34:41,105 - run_pipeline - ERROR - 2025-04-17 08:34:41,021 - process_data - INFO - Processed 20 job postings from C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\raw\all_results_20250417_081857.json
+2025-04-17 08:34:41,105 - run_pipeline - ERROR - 2025-04-17 08:34:41,022 - process_data - INFO - Processed 20 job postings from C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\raw\mock_data_20250417_083253.json
+2025-04-17 08:34:41,105 - run_pipeline - ERROR - 2025-04-17 08:34:41,042 - process_data - INFO - Processed 80 job postings from C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\raw\all_results_20250417_083440.json
+2025-04-17 08:34:41,105 - run_pipeline - ERROR - 2025-04-17 08:34:41,044 - process_data - INFO - Processed 80 job postings from C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\raw\mock_data_20250417_083440.json
+2025-04-17 08:34:41,105 - run_pipeline - ERROR - 2025-04-17 08:34:41,051 - process_data - INFO - Updating skill dictionary based on 6 files
+2025-04-17 08:34:41,105 - run_pipeline - ERROR - 2025-04-17 08:34:41,052 - process_data - INFO - Saved updated skill dictionary to C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\processed\skill_dictionary.json
+2025-04-17 08:34:41,105 - run_pipeline - ERROR - 2025-04-17 08:34:41,052 - process_data - INFO - Processing completed
+2025-04-17 08:34:41,108 - run_pipeline - INFO - Command completed successfully
+2025-04-17 08:34:41,108 - run_pipeline - INFO - Running command: C:\Users\Yabuku\AppData\Local\Programs\Python\Python311\python.exe C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\scripts\train_models.py --models all
+2025-04-17 08:38:22,181 - run_pipeline - INFO - Running pipeline with the following parameters:
+2025-04-17 08:38:22,181 - run_pipeline - INFO - Queries: ['data scientist', 'data analyst']
+2025-04-17 08:38:22,181 - run_pipeline - INFO - Locations: ['New York', 'Remote']
+2025-04-17 08:38:22,181 - run_pipeline - INFO - Sources: ['mock']
+2025-04-17 08:38:22,181 - run_pipeline - INFO - Limit per query: 20
+2025-04-17 08:38:22,181 - run_pipeline - INFO - Skip scraping: False
+2025-04-17 08:38:22,182 - run_pipeline - INFO - Skip processing: False
+2025-04-17 08:38:22,182 - run_pipeline - INFO - Skip modeling: False
+2025-04-17 08:38:22,182 - run_pipeline - INFO - Running command: C:\Users\Yabuku\AppData\Local\Programs\Python\Python311\python.exe C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\scripts\run_scraper.py --queries data scientist data analyst --locations New York Remote --sources mock --limit 20
+2025-04-17 08:38:22,766 - run_pipeline - ERROR - 2025-04-17 08:38:22,723 - run_scraper - INFO - Running scraper with the following parameters:
+2025-04-17 08:38:22,766 - run_pipeline - ERROR - 2025-04-17 08:38:22,723 - run_scraper - INFO - Queries: ['data scientist', 'data analyst']
+2025-04-17 08:38:22,766 - run_pipeline - ERROR - 2025-04-17 08:38:22,723 - run_scraper - INFO - Locations: ['New York', 'Remote']
+2025-04-17 08:38:22,766 - run_pipeline - ERROR - 2025-04-17 08:38:22,723 - run_scraper - INFO - Sources: ['mock']
+2025-04-17 08:38:22,767 - run_pipeline - ERROR - 2025-04-17 08:38:22,723 - run_scraper - INFO - Limit per query: 20
+2025-04-17 08:38:22,767 - run_pipeline - ERROR - 2025-04-17 08:38:22,723 - run_scraper - INFO - Output directory: C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\raw
+2025-04-17 08:38:22,767 - run_pipeline - ERROR - 2025-04-17 08:38:22,723 - scraper - INFO - Generating mock data for 2 queries and 2 locations
+2025-04-17 08:38:22,767 - run_pipeline - ERROR - 2025-04-17 08:38:22,724 - scraper - INFO - Generated 80 mock job postings saved to data\raw\mock_data_20250417_083822.json
+2025-04-17 08:38:22,767 - run_pipeline - ERROR - 2025-04-17 08:38:22,725 - scraper - INFO - Saved 80 total job postings to data\raw\all_results_20250417_083822.json
+2025-04-17 08:38:22,767 - run_pipeline - ERROR - 2025-04-17 08:38:22,725 - run_scraper - INFO - Scraping completed
+2025-04-17 08:38:22,771 - run_pipeline - INFO - Command completed successfully
+2025-04-17 08:38:22,771 - run_pipeline - INFO - Running command: C:\Users\Yabuku\AppData\Local\Programs\Python\Python311\python.exe C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\scripts\process_data.py --update-skill-dict
+2025-04-17 08:38:23,607 - run_pipeline - ERROR - 2025-04-17 08:38:23,070 - process_data - INFO - Processing data with the following parameters:
+2025-04-17 08:38:23,607 - run_pipeline - ERROR - 2025-04-17 08:38:23,070 - process_data - INFO - Input directory: C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\raw
+2025-04-17 08:38:23,607 - run_pipeline - ERROR - 2025-04-17 08:38:23,070 - process_data - INFO - Output directory: C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\processed
+2025-04-17 08:38:23,607 - run_pipeline - ERROR - 2025-04-17 08:38:23,070 - process_data - INFO - Update skill dictionary: True
+2025-04-17 08:38:23,607 - run_pipeline - ERROR - 2025-04-17 08:38:23,070 - process_data - INFO - Workers: auto
+2025-04-17 08:38:23,607 - run_pipeline - ERROR - 2025-04-17 08:38:23,070 - process_data - INFO - Fast mode: False
+2025-04-17 08:38:23,608 - run_pipeline - ERROR - 2025-04-17 08:38:23,070 - process_data - INFO - Processing 8 files using 8 workers
+2025-04-17 08:38:23,608 - run_pipeline - ERROR - 2025-04-17 08:38:23,536 - process_data - INFO - Processed 20 job postings from C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\raw\all_results_20250417_081857.json
+2025-04-17 08:38:23,608 - run_pipeline - ERROR - 2025-04-17 08:38:23,540 - process_data - INFO - Processed 20 job postings from C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\raw\all_results_20250417_083253.json
+2025-04-17 08:38:23,608 - run_pipeline - ERROR - 2025-04-17 08:38:23,547 - process_data - INFO - Processed 20 job postings from C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\raw\mock_data_20250417_083253.json
+2025-04-17 08:38:23,608 - run_pipeline - ERROR - 2025-04-17 08:38:23,548 - process_data - INFO - Processed 20 job postings from C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\raw\mock_data_20250417_081857.json
+2025-04-17 08:38:23,608 - run_pipeline - ERROR - 2025-04-17 08:38:23,555 - process_data - INFO - Processed 80 job postings from C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\raw\all_results_20250417_083440.json
+2025-04-17 08:38:23,608 - run_pipeline - ERROR - 2025-04-17 08:38:23,564 - process_data - INFO - Processed 80 job postings from C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\raw\all_results_20250417_083822.json
+2025-04-17 08:38:23,608 - run_pipeline - ERROR - 2025-04-17 08:38:23,565 - process_data - INFO - Processed 80 job postings from C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\raw\mock_data_20250417_083440.json
+2025-04-17 08:38:23,608 - run_pipeline - ERROR - 2025-04-17 08:38:23,565 - process_data - INFO - Processed 80 job postings from C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\raw\mock_data_20250417_083822.json
+2025-04-17 08:38:23,608 - run_pipeline - ERROR - 2025-04-17 08:38:23,575 - process_data - INFO - Updating skill dictionary based on 8 files
+2025-04-17 08:38:23,608 - run_pipeline - ERROR - 2025-04-17 08:38:23,576 - process_data - INFO - Saved updated skill dictionary to C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\processed\skill_dictionary.json
+2025-04-17 08:38:23,609 - run_pipeline - ERROR - 2025-04-17 08:38:23,576 - process_data - INFO - Processing completed
+2025-04-17 08:38:23,611 - run_pipeline - INFO - Command completed successfully
+2025-04-17 08:38:23,611 - run_pipeline - INFO - Running command: C:\Users\Yabuku\AppData\Local\Programs\Python\Python311\python.exe C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\scripts\train_models.py --models all
+2025-04-17 08:38:24,010 - run_pipeline - ERROR - 2025-04-17 08:38:23,932 - train_models - INFO - Training models with the following parameters:
+2025-04-17 08:38:24,011 - run_pipeline - ERROR - 2025-04-17 08:38:23,932 - train_models - INFO - Input directory: C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\processed
+2025-04-17 08:38:24,011 - run_pipeline - ERROR - 2025-04-17 08:38:23,932 - train_models - INFO - Output directory: C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\models
+2025-04-17 08:38:24,011 - run_pipeline - ERROR - 2025-04-17 08:38:23,932 - train_models - INFO - Models to train: ['all']
+2025-04-17 08:38:24,011 - run_pipeline - ERROR - 2025-04-17 08:38:23,932 - train_models - INFO - Fast mode: False
+2025-04-17 08:38:24,011 - run_pipeline - ERROR - 2025-04-17 08:38:23,932 - train_models - INFO - Synthetic data: False
+2025-04-17 08:38:24,011 - run_pipeline - ERROR - 2025-04-17 08:38:23,932 - train_models - INFO - Using processed data from C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\processed\mock_data_20250417_083440_processed.csv
+2025-04-17 08:38:24,011 - run_pipeline - ERROR - 2025-04-17 08:38:23,932 - train_models - INFO - Loading job data from C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\processed\mock_data_20250417_083440_processed.csv
+2025-04-17 08:38:24,011 - run_pipeline - ERROR - 2025-04-17 08:38:23,940 - train_models - INFO - Loaded 80 job postings
+2025-04-17 08:38:24,012 - run_pipeline - ERROR - 2025-04-17 08:38:23,940 - train_models - INFO - Analyzing skill relationships
+2025-04-17 08:38:24,012 - run_pipeline - ERROR - 2025-04-17 08:38:23,941 - train_models - INFO - Identified 16 skill columns
+2025-04-17 08:38:24,012 - run_pipeline - ERROR - 2025-04-17 08:38:23,941 - train_models - INFO - Building skill co-occurrence matrix
+2025-04-17 08:38:24,012 - run_pipeline - ERROR - 2025-04-17 08:38:23,955 - train_models - INFO - Building skill relationship graph
+2025-04-17 08:38:24,012 - run_pipeline - ERROR - 2025-04-17 08:38:23,958 - train_models - INFO - Finding skill clusters
+2025-04-17 08:38:24,012 - run_pipeline - ERROR - 2025-04-17 08:38:23,959 - train_models - INFO - Completed skill relationship analysis in 0.02 seconds
+2025-04-17 08:38:24,012 - run_pipeline - ERROR - 2025-04-17 08:38:23,959 - train_models - INFO - Completed skill relationship analysis
+2025-04-17 08:38:24,013 - run_pipeline - ERROR - 2025-04-17 08:38:23,959 - train_models - INFO - Analyzing skill trends
+2025-04-17 08:38:24,013 - run_pipeline - ERROR - 2025-04-17 08:38:23,959 - train_models - INFO - Identified 16 skill columns
+2025-04-17 08:38:24,013 - run_pipeline - ERROR - 2025-04-17 08:38:23,959 - train_models - WARNING - Limited date variation, generating synthetic time series
+2025-04-17 08:38:24,013 - run_pipeline - ERROR - 2025-04-17 08:38:23,962 - train_models - INFO - Preparing time series data
+2025-04-17 08:38:24,013 - run_pipeline - ERROR - 2025-04-17 08:38:23,969 - train_models - INFO - Completed skill trend analysis in 0.01 seconds
+2025-04-17 08:38:24,013 - run_pipeline - ERROR - 2025-04-17 08:38:23,969 - train_models - INFO - Completed skill trend analysis
+2025-04-17 08:38:24,013 - run_pipeline - ERROR - 2025-04-17 08:38:23,969 - train_models - INFO - Training predictive models
+2025-04-17 08:38:24,013 - run_pipeline - ERROR - 2025-04-17 08:38:23,972 - train_models - ERROR - Error training predictive model: Converting from datetime64[ns] to int32 is not supported. Do obj.astype('int64').astype(dtype) instead
+2025-04-17 08:38:24,013 - run_pipeline - ERROR - 2025-04-17 08:38:23,972 - train_models - INFO - Model training completed
+2025-04-17 08:38:24,015 - run_pipeline - INFO - Command completed successfully
+2025-04-17 08:38:24,016 - run_pipeline - INFO - Pipeline completed successfully
+2025-04-17 09:14:23,470 - run_pipeline - INFO - Running pipeline with the following parameters:
+2025-04-17 09:14:23,470 - run_pipeline - INFO - Queries: ['data scientist', 'data analyst']
+2025-04-17 09:14:23,470 - run_pipeline - INFO - Locations: ['New York', 'Remote']
+2025-04-17 09:14:23,471 - run_pipeline - INFO - Sources: ['mock']
+2025-04-17 09:14:23,471 - run_pipeline - INFO - Limit per query: 20
+2025-04-17 09:14:23,471 - run_pipeline - INFO - Skip scraping: False
+2025-04-17 09:14:23,471 - run_pipeline - INFO - Skip processing: False
+2025-04-17 09:14:23,471 - run_pipeline - INFO - Skip modeling: False
+2025-04-17 09:14:23,471 - run_pipeline - INFO - Running command: C:\Users\Yabuku\AppData\Local\Programs\Python\Python311\python.exe C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\scripts\run_scraper.py --queries data scientist data analyst --locations New York Remote --sources mock --limit 20
+2025-04-17 09:14:23,926 - run_pipeline - ERROR - 2025-04-17 09:14:23,883 - run_scraper - INFO - Running scraper with the following parameters:
+2025-04-17 09:14:23,926 - run_pipeline - ERROR - 2025-04-17 09:14:23,884 - run_scraper - INFO - Queries: ['data scientist', 'data analyst']
+2025-04-17 09:14:23,926 - run_pipeline - ERROR - 2025-04-17 09:14:23,884 - run_scraper - INFO - Locations: ['New York', 'Remote']
+2025-04-17 09:14:23,928 - run_pipeline - ERROR - 2025-04-17 09:14:23,884 - run_scraper - INFO - Sources: ['mock']
+2025-04-17 09:14:23,928 - run_pipeline - ERROR - 2025-04-17 09:14:23,884 - run_scraper - INFO - Limit per query: 20
+2025-04-17 09:14:23,928 - run_pipeline - ERROR - 2025-04-17 09:14:23,884 - run_scraper - INFO - Output directory: C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\raw
+2025-04-17 09:14:23,928 - run_pipeline - ERROR - 2025-04-17 09:14:23,884 - scraper - INFO - Generating mock data for 2 queries and 2 locations
+2025-04-17 09:14:23,928 - run_pipeline - ERROR - 2025-04-17 09:14:23,884 - scraper - INFO - Generated 80 mock job postings saved to data\raw\mock_data_20250417_091423.json
+2025-04-17 09:14:23,928 - run_pipeline - ERROR - 2025-04-17 09:14:23,885 - scraper - INFO - Saved 80 total job postings to data\raw\all_results_20250417_091423.json
+2025-04-17 09:14:23,928 - run_pipeline - ERROR - 2025-04-17 09:14:23,885 - run_scraper - INFO - Scraping completed
+2025-04-17 09:14:23,933 - run_pipeline - INFO - Command completed successfully
+2025-04-17 09:14:23,933 - run_pipeline - INFO - Running command: C:\Users\Yabuku\AppData\Local\Programs\Python\Python311\python.exe C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\scripts\process_data.py --update-skill-dict
+2025-04-17 09:14:24,851 - run_pipeline - ERROR - 2025-04-17 09:14:24,220 - process_data - INFO - Processing data with the following parameters:
+2025-04-17 09:14:24,851 - run_pipeline - ERROR - 2025-04-17 09:14:24,220 - process_data - INFO - Input directory: C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\raw
+2025-04-17 09:14:24,852 - run_pipeline - ERROR - 2025-04-17 09:14:24,220 - process_data - INFO - Output directory: C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\processed
+2025-04-17 09:14:24,852 - run_pipeline - ERROR - 2025-04-17 09:14:24,221 - process_data - INFO - Update skill dictionary: True
+2025-04-17 09:14:24,852 - run_pipeline - ERROR - 2025-04-17 09:14:24,221 - process_data - INFO - Workers: auto
+2025-04-17 09:14:24,852 - run_pipeline - ERROR - 2025-04-17 09:14:24,221 - process_data - INFO - Fast mode: False
+2025-04-17 09:14:24,852 - run_pipeline - ERROR - 2025-04-17 09:14:24,221 - process_data - INFO - Processing 10 files using 10 workers
+2025-04-17 09:14:24,852 - run_pipeline - ERROR - 2025-04-17 09:14:24,764 - process_data - INFO - Processed 20 job postings from C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\raw\all_results_20250417_081857.json
+2025-04-17 09:14:24,852 - run_pipeline - ERROR - 2025-04-17 09:14:24,764 - process_data - INFO - Processed 20 job postings from C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\raw\all_results_20250417_083253.json
+2025-04-17 09:14:24,852 - run_pipeline - ERROR - 2025-04-17 09:14:24,776 - process_data - INFO - Processed 20 job postings from C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\raw\mock_data_20250417_083253.json
+2025-04-17 09:14:24,852 - run_pipeline - ERROR - 2025-04-17 09:14:24,779 - process_data - INFO - Processed 20 job postings from C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\raw\mock_data_20250417_081857.json
+2025-04-17 09:14:24,852 - run_pipeline - ERROR - 2025-04-17 09:14:24,789 - process_data - INFO - Processed 80 job postings from C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\raw\all_results_20250417_083440.json
+2025-04-17 09:14:24,852 - run_pipeline - ERROR - 2025-04-17 09:14:24,791 - process_data - INFO - Processed 80 job postings from C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\raw\all_results_20250417_083822.json
+2025-04-17 09:14:24,852 - run_pipeline - ERROR - 2025-04-17 09:14:24,794 - process_data - INFO - Processed 80 job postings from C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\raw\mock_data_20250417_083440.json
+2025-04-17 09:14:24,852 - run_pipeline - ERROR - 2025-04-17 09:14:24,800 - process_data - INFO - Processed 80 job postings from C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\raw\mock_data_20250417_083822.json
+2025-04-17 09:14:24,852 - run_pipeline - ERROR - 2025-04-17 09:14:24,800 - process_data - INFO - Processed 80 job postings from C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\raw\all_results_20250417_091423.json
+2025-04-17 09:14:24,852 - run_pipeline - ERROR - 2025-04-17 09:14:24,807 - process_data - INFO - Processed 80 job postings from C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\raw\mock_data_20250417_091423.json
+2025-04-17 09:14:24,852 - run_pipeline - ERROR - 2025-04-17 09:14:24,817 - process_data - INFO - Updating skill dictionary based on 10 files
+2025-04-17 09:14:24,852 - run_pipeline - ERROR - 2025-04-17 09:14:24,818 - process_data - INFO - Saved updated skill dictionary to C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\processed\skill_dictionary.json
+2025-04-17 09:14:24,852 - run_pipeline - ERROR - 2025-04-17 09:14:24,818 - process_data - INFO - Processing completed
+2025-04-17 09:14:24,856 - run_pipeline - INFO - Command completed successfully
+2025-04-17 09:14:24,856 - run_pipeline - INFO - Running command: C:\Users\Yabuku\AppData\Local\Programs\Python\Python311\python.exe C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\scripts\train_models.py --models all
+2025-04-17 09:14:25,233 - run_pipeline - ERROR - 2025-04-17 09:14:25,162 - train_models - INFO - Training models with the following parameters:
+2025-04-17 09:14:25,233 - run_pipeline - ERROR - 2025-04-17 09:14:25,162 - train_models - INFO - Input directory: C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\processed
+2025-04-17 09:14:25,233 - run_pipeline - ERROR - 2025-04-17 09:14:25,162 - train_models - INFO - Output directory: C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\models
+2025-04-17 09:14:25,234 - run_pipeline - ERROR - 2025-04-17 09:14:25,162 - train_models - INFO - Models to train: ['all']
+2025-04-17 09:14:25,234 - run_pipeline - ERROR - 2025-04-17 09:14:25,162 - train_models - INFO - Fast mode: False
+2025-04-17 09:14:25,234 - run_pipeline - ERROR - 2025-04-17 09:14:25,162 - train_models - INFO - Synthetic data: False
+2025-04-17 09:14:25,234 - run_pipeline - ERROR - 2025-04-17 09:14:25,163 - train_models - INFO - Using processed data from C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\processed\mock_data_20250417_091423_processed.csv
+2025-04-17 09:14:25,234 - run_pipeline - ERROR - 2025-04-17 09:14:25,163 - train_models - INFO - Loading job data from C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\processed\mock_data_20250417_091423_processed.csv
+2025-04-17 09:14:25,234 - run_pipeline - ERROR - 2025-04-17 09:14:25,171 - train_models - INFO - Loaded 80 job postings
+2025-04-17 09:14:25,234 - run_pipeline - ERROR - 2025-04-17 09:14:25,171 - train_models - INFO - Analyzing skill relationships
+2025-04-17 09:14:25,234 - run_pipeline - ERROR - 2025-04-17 09:14:25,172 - train_models - INFO - Identified 16 skill columns
+2025-04-17 09:14:25,234 - run_pipeline - ERROR - 2025-04-17 09:14:25,172 - train_models - INFO - Building skill co-occurrence matrix
+2025-04-17 09:14:25,234 - run_pipeline - ERROR - 2025-04-17 09:14:25,187 - train_models - INFO - Building skill relationship graph
+2025-04-17 09:14:25,235 - run_pipeline - ERROR - 2025-04-17 09:14:25,189 - train_models - INFO - Finding skill clusters
+2025-04-17 09:14:25,235 - run_pipeline - ERROR - 2025-04-17 09:14:25,190 - train_models - INFO - Completed skill relationship analysis in 0.02 seconds
+2025-04-17 09:14:25,235 - run_pipeline - ERROR - 2025-04-17 09:14:25,190 - train_models - INFO - Completed skill relationship analysis
+2025-04-17 09:14:25,235 - run_pipeline - ERROR - 2025-04-17 09:14:25,190 - train_models - INFO - Analyzing skill trends
+2025-04-17 09:14:25,235 - run_pipeline - ERROR - 2025-04-17 09:14:25,191 - train_models - INFO - Identified 16 skill columns
+2025-04-17 09:14:25,235 - run_pipeline - ERROR - 2025-04-17 09:14:25,191 - train_models - WARNING - Limited date variation, generating synthetic time series
+2025-04-17 09:14:25,235 - run_pipeline - ERROR - 2025-04-17 09:14:25,191 - train_models - INFO - Preparing time series data
+2025-04-17 09:14:25,235 - run_pipeline - ERROR - 2025-04-17 09:14:25,195 - train_models - INFO - Completed skill trend analysis in 0.01 seconds
+2025-04-17 09:14:25,235 - run_pipeline - ERROR - 2025-04-17 09:14:25,196 - train_models - INFO - Completed skill trend analysis
+2025-04-17 09:14:25,235 - run_pipeline - ERROR - 2025-04-17 09:14:25,196 - train_models - INFO - Training predictive models
+2025-04-17 09:14:25,235 - run_pipeline - ERROR - 2025-04-17 09:14:25,197 - train_models - INFO - Identified 16 skill columns
+2025-04-17 09:14:25,235 - run_pipeline - ERROR - 2025-04-17 09:14:25,197 - train_models - INFO - Training simplified prediction models
+2025-04-17 09:14:25,235 - run_pipeline - ERROR - 2025-04-17 09:14:25,201 - train_models - INFO - Completed predictive model training in 0.01 seconds
+2025-04-17 09:14:25,236 - run_pipeline - ERROR - 2025-04-17 09:14:25,201 - train_models - INFO - Completed predictive model training
+2025-04-17 09:14:25,236 - run_pipeline - ERROR - 2025-04-17 09:14:25,201 - train_models - INFO - Model training completed
+2025-04-17 09:14:25,237 - run_pipeline - INFO - Command completed successfully
+2025-04-17 09:14:25,237 - run_pipeline - INFO - Pipeline completed successfully
+2025-04-17 09:16:00,364 - run_pipeline - ERROR - 2025-04-17 08:34:42,343 - train_models - INFO - Training models with the following parameters:
+2025-04-17 09:16:00,365 - run_pipeline - ERROR - 2025-04-17 08:34:42,343 - train_models - INFO - Input directory: C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\processed
+2025-04-17 09:16:00,365 - run_pipeline - ERROR - 2025-04-17 08:34:42,343 - train_models - INFO - Output directory: C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\models
+2025-04-17 09:16:00,365 - run_pipeline - ERROR - 2025-04-17 08:34:42,343 - train_models - INFO - Models to train: ['all']
+2025-04-17 09:16:00,365 - run_pipeline - ERROR - 2025-04-17 08:34:42,343 - train_models - INFO - Using processed data from C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\processed\mock_data_20250417_083440_processed.csv
+2025-04-17 09:16:00,365 - run_pipeline - ERROR - 2025-04-17 08:34:42,343 - skill_relationships - INFO - Analyzing skill relationships in C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\processed\mock_data_20250417_083440_processed.csv
+2025-04-17 09:16:00,365 - run_pipeline - ERROR - 2025-04-17 08:34:42,353 - skill_relationships - INFO - Building skill co-occurrence matrix
+2025-04-17 09:16:00,366 - run_pipeline - ERROR - 2025-04-17 08:34:42,422 - skill_relationships - INFO - Building skill relationship graph
+2025-04-17 09:16:00,366 - run_pipeline - ERROR - 2025-04-17 08:34:42,424 - train_models - ERROR - Error training relationships model: Object of type int64 is not JSON serializable
+2025-04-17 09:16:00,366 - run_pipeline - ERROR - 2025-04-17 08:34:42,424 - time_series - INFO - Analyzing skill trends in C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\processed\mock_data_20250417_083440_processed.csv
+2025-04-17 09:16:00,366 - run_pipeline - ERROR - 2025-04-17 08:34:42,425 - time_series - INFO - Preparing time series data
+2025-04-17 09:16:00,366 - run_pipeline - ERROR - 2025-04-17 08:34:42,431 - time_series - INFO - Detecting skill demand trends
+2025-04-17 09:16:00,366 - run_pipeline - ERROR - 2025-04-17 08:34:42,436 - time_series - INFO - Identifying emerging skills
+2025-04-17 09:16:00,366 - run_pipeline - ERROR - 2025-04-17 08:34:42,437 - time_series - INFO - Identifying declining skills
+2025-04-17 09:16:00,366 - run_pipeline - ERROR - 2025-04-17 08:34:42,437 - time_series - INFO - Saving trend analysis to C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\models\skill_trends
+2025-04-17 09:16:00,366 - run_pipeline - ERROR - 2025-04-17 08:34:42,438 - time_series - INFO - Saved trend analysis results to C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\models\skill_trends
+2025-04-17 09:16:00,366 - run_pipeline - ERROR - 2025-04-17 08:34:42,438 - train_models - INFO - Completed skill trend analysis
+2025-04-17 09:16:00,367 - run_pipeline - ERROR - 2025-04-17 08:34:42,438 - predictive - INFO - Training predictive models with data from C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\processed\mock_data_20250417_083440_processed.csv
+2025-04-17 09:16:00,367 - run_pipeline - ERROR - 2025-04-17 08:34:42,440 - predictive - INFO - Training models for 16 skills
+2025-04-17 09:16:00,367 - run_pipeline - ERROR - 2025-04-17 08:34:42,440 - predictive - INFO - Training model for docker
+2025-04-17 09:16:00,367 - run_pipeline - ERROR - 2025-04-17 08:34:42,440 - predictive - INFO - Training random_forest model
+2025-04-17 09:16:00,367 - run_pipeline - ERROR - 2025-04-17 08:34:42,478 - predictive - INFO - Training model for teamwork
+2025-04-17 09:16:00,367 - run_pipeline - ERROR - 2025-04-17 08:34:42,479 - predictive - INFO - Training random_forest model
+2025-04-17 09:16:00,367 - run_pipeline - ERROR - 2025-04-17 08:34:42,515 - predictive - INFO - Training model for javascript
+2025-04-17 09:16:00,367 - run_pipeline - ERROR - 2025-04-17 08:34:42,515 - predictive - INFO - Training random_forest model
+2025-04-17 09:16:00,368 - run_pipeline - ERROR - 2025-04-17 08:34:42,550 - predictive - INFO - Training model for kubernetes
+2025-04-17 09:16:00,369 - run_pipeline - ERROR - 2025-04-17 08:34:42,551 - predictive - INFO - Training random_forest model
+2025-04-17 09:16:00,369 - run_pipeline - ERROR - 2025-04-17 08:34:42,586 - predictive - INFO - Training model for communication
+2025-04-17 09:16:00,369 - run_pipeline - ERROR - 2025-04-17 08:34:42,586 - predictive - INFO - Training random_forest model
+2025-04-17 09:16:00,369 - run_pipeline - ERROR - 2025-04-17 08:34:42,619 - predictive - INFO - Training model for angular
+2025-04-17 09:16:00,369 - run_pipeline - ERROR - 2025-04-17 08:34:42,620 - predictive - INFO - Training random_forest model
+2025-04-17 09:16:00,369 - run_pipeline - ERROR - 2025-04-17 08:34:42,655 - predictive - INFO - Training model for pytorch
+2025-04-17 09:16:00,369 - run_pipeline - ERROR - 2025-04-17 08:34:42,655 - predictive - INFO - Training random_forest model
+2025-04-17 09:16:00,371 - run_pipeline - ERROR - 2025-04-17 08:34:42,689 - predictive - INFO - Training model for azure
+2025-04-17 09:16:00,371 - run_pipeline - ERROR - 2025-04-17 08:34:42,690 - predictive - INFO - Training random_forest model
+2025-04-17 09:16:00,371 - run_pipeline - ERROR - 2025-04-17 08:34:42,724 - predictive - INFO - Training model for problem solving
+2025-04-17 09:16:00,371 - run_pipeline - ERROR - 2025-04-17 08:34:42,724 - predictive - INFO - Training random_forest model
+2025-04-17 09:16:00,371 - run_pipeline - ERROR - 2025-04-17 08:34:42,759 - predictive - INFO - Training model for java
+2025-04-17 09:16:00,371 - run_pipeline - ERROR - 2025-04-17 08:34:42,760 - predictive - INFO - Training random_forest model
+2025-04-17 09:16:00,371 - run_pipeline - ERROR - 2025-04-17 08:34:42,795 - predictive - INFO - Training model for python
+2025-04-17 09:16:00,371 - run_pipeline - ERROR - 2025-04-17 08:34:42,796 - predictive - INFO - Training random_forest model
+2025-04-17 09:16:00,371 - run_pipeline - ERROR - 2025-04-17 08:34:42,832 - predictive - INFO - Training model for aws
+2025-04-17 09:16:00,372 - run_pipeline - ERROR - 2025-04-17 08:34:42,832 - predictive - INFO - Training random_forest model
+2025-04-17 09:16:00,384 - run_pipeline - ERROR - Command failed with exit code 3221225786
+2025-04-17 09:16:23,985 - run_pipeline - INFO - Running pipeline with the following parameters:
+2025-04-17 09:16:23,985 - run_pipeline - INFO - Queries: ['data scientist', 'data analyst']
+2025-04-17 09:16:23,985 - run_pipeline - INFO - Locations: ['New York', 'Remote']
+2025-04-17 09:16:23,985 - run_pipeline - INFO - Sources: ['mock']
+2025-04-17 09:16:23,985 - run_pipeline - INFO - Limit per query: 20
+2025-04-17 09:16:23,985 - run_pipeline - INFO - Skip scraping: False
+2025-04-17 09:16:23,985 - run_pipeline - INFO - Skip processing: False
+2025-04-17 09:16:23,985 - run_pipeline - INFO - Skip modeling: False
+2025-04-17 09:16:23,986 - run_pipeline - INFO - Running command: C:\Users\Yabuku\AppData\Local\Programs\Python\Python311\python.exe C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\scripts\run_scraper.py --queries data scientist data analyst --locations New York Remote --sources mock --limit 20
+2025-04-17 09:16:24,432 - run_pipeline - ERROR - 2025-04-17 09:16:24,386 - run_scraper - INFO - Running scraper with the following parameters:
+2025-04-17 09:16:24,432 - run_pipeline - ERROR - 2025-04-17 09:16:24,386 - run_scraper - INFO - Queries: ['data scientist', 'data analyst']
+2025-04-17 09:16:24,432 - run_pipeline - ERROR - 2025-04-17 09:16:24,386 - run_scraper - INFO - Locations: ['New York', 'Remote']
+2025-04-17 09:16:24,433 - run_pipeline - ERROR - 2025-04-17 09:16:24,386 - run_scraper - INFO - Sources: ['mock']
+2025-04-17 09:16:24,433 - run_pipeline - ERROR - 2025-04-17 09:16:24,386 - run_scraper - INFO - Limit per query: 20
+2025-04-17 09:16:24,433 - run_pipeline - ERROR - 2025-04-17 09:16:24,386 - run_scraper - INFO - Output directory: C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\raw
+2025-04-17 09:16:24,433 - run_pipeline - ERROR - 2025-04-17 09:16:24,386 - scraper - INFO - Generating mock data for 2 queries and 2 locations
+2025-04-17 09:16:24,433 - run_pipeline - ERROR - 2025-04-17 09:16:24,388 - scraper - INFO - Generated 80 mock job postings saved to data\raw\mock_data_20250417_091624.json
+2025-04-17 09:16:24,433 - run_pipeline - ERROR - 2025-04-17 09:16:24,388 - scraper - INFO - Saved 80 total job postings to data\raw\all_results_20250417_091624.json
+2025-04-17 09:16:24,433 - run_pipeline - ERROR - 2025-04-17 09:16:24,389 - run_scraper - INFO - Scraping completed
+2025-04-17 09:16:24,439 - run_pipeline - INFO - Command completed successfully
+2025-04-17 09:16:24,440 - run_pipeline - INFO - Running command: C:\Users\Yabuku\AppData\Local\Programs\Python\Python311\python.exe C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\scripts\process_data.py --update-skill-dict
+2025-04-17 09:16:25,422 - run_pipeline - ERROR - 2025-04-17 09:16:24,723 - process_data - INFO - Processing data with the following parameters:
+2025-04-17 09:16:25,422 - run_pipeline - ERROR - 2025-04-17 09:16:24,723 - process_data - INFO - Input directory: C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\raw
+2025-04-17 09:16:25,422 - run_pipeline - ERROR - 2025-04-17 09:16:24,723 - process_data - INFO - Output directory: C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\processed
+2025-04-17 09:16:25,422 - run_pipeline - ERROR - 2025-04-17 09:16:24,724 - process_data - INFO - Update skill dictionary: True
+2025-04-17 09:16:25,423 - run_pipeline - ERROR - 2025-04-17 09:16:24,724 - process_data - INFO - Workers: auto
+2025-04-17 09:16:25,423 - run_pipeline - ERROR - 2025-04-17 09:16:24,724 - process_data - INFO - Fast mode: False
+2025-04-17 09:16:25,423 - run_pipeline - ERROR - 2025-04-17 09:16:24,724 - process_data - INFO - Processing 12 files using 12 workers
+2025-04-17 09:16:25,423 - run_pipeline - ERROR - 2025-04-17 09:16:25,308 - process_data - INFO - Processed 20 job postings from C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\raw\all_results_20250417_081857.json
+2025-04-17 09:16:25,423 - run_pipeline - ERROR - 2025-04-17 09:16:25,313 - process_data - INFO - Processed 20 job postings from C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\raw\all_results_20250417_083253.json
+2025-04-17 09:16:25,423 - run_pipeline - ERROR - 2025-04-17 09:16:25,325 - process_data - INFO - Processed 20 job postings from C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\raw\mock_data_20250417_081857.json
+2025-04-17 09:16:25,423 - run_pipeline - ERROR - 2025-04-17 09:16:25,327 - process_data - INFO - Processed 20 job postings from C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\raw\mock_data_20250417_083253.json
+2025-04-17 09:16:25,423 - run_pipeline - ERROR - 2025-04-17 09:16:25,340 - process_data - INFO - Processed 80 job postings from C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\raw\all_results_20250417_083440.json
+2025-04-17 09:16:25,423 - run_pipeline - ERROR - 2025-04-17 09:16:25,341 - process_data - INFO - Processed 80 job postings from C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\raw\all_results_20250417_083822.json
+2025-04-17 09:16:25,423 - run_pipeline - ERROR - 2025-04-17 09:16:25,344 - process_data - INFO - Processed 80 job postings from C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\raw\all_results_20250417_091423.json
+2025-04-17 09:16:25,424 - run_pipeline - ERROR - 2025-04-17 09:16:25,348 - process_data - INFO - Processed 80 job postings from C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\raw\all_results_20250417_091624.json
+2025-04-17 09:16:25,424 - run_pipeline - ERROR - 2025-04-17 09:16:25,353 - process_data - INFO - Processed 80 job postings from C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\raw\mock_data_20250417_083440.json
+2025-04-17 09:16:25,424 - run_pipeline - ERROR - 2025-04-17 09:16:25,354 - process_data - INFO - Processed 80 job postings from C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\raw\mock_data_20250417_091423.json
+2025-04-17 09:16:25,424 - run_pipeline - ERROR - 2025-04-17 09:16:25,354 - process_data - INFO - Processed 80 job postings from C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\raw\mock_data_20250417_083822.json
+2025-04-17 09:16:25,424 - run_pipeline - ERROR - 2025-04-17 09:16:25,357 - process_data - INFO - Processed 80 job postings from C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\raw\mock_data_20250417_091624.json
+2025-04-17 09:16:25,424 - run_pipeline - ERROR - 2025-04-17 09:16:25,380 - process_data - INFO - Updating skill dictionary based on 12 files
+2025-04-17 09:16:25,424 - run_pipeline - ERROR - 2025-04-17 09:16:25,380 - process_data - INFO - Saved updated skill dictionary to C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\processed\skill_dictionary.json
+2025-04-17 09:16:25,424 - run_pipeline - ERROR - 2025-04-17 09:16:25,380 - process_data - INFO - Processing completed
+2025-04-17 09:16:25,428 - run_pipeline - INFO - Command completed successfully
+2025-04-17 09:16:25,428 - run_pipeline - INFO - Running command: C:\Users\Yabuku\AppData\Local\Programs\Python\Python311\python.exe C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\scripts\train_models.py --models all
+2025-04-17 09:16:25,792 - run_pipeline - ERROR - 2025-04-17 09:16:25,727 - train_models - INFO - Training models with the following parameters:
+2025-04-17 09:16:25,792 - run_pipeline - ERROR - 2025-04-17 09:16:25,727 - train_models - INFO - Input directory: C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\processed
+2025-04-17 09:16:25,793 - run_pipeline - ERROR - 2025-04-17 09:16:25,727 - train_models - INFO - Output directory: C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\models
+2025-04-17 09:16:25,793 - run_pipeline - ERROR - 2025-04-17 09:16:25,727 - train_models - INFO - Models to train: ['all']
+2025-04-17 09:16:25,793 - run_pipeline - ERROR - 2025-04-17 09:16:25,727 - train_models - INFO - Fast mode: False
+2025-04-17 09:16:25,793 - run_pipeline - ERROR - 2025-04-17 09:16:25,727 - train_models - INFO - Synthetic data: False
+2025-04-17 09:16:25,793 - run_pipeline - ERROR - 2025-04-17 09:16:25,728 - train_models - INFO - Using processed data from C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\processed\mock_data_20250417_091624_processed.csv
+2025-04-17 09:16:25,793 - run_pipeline - ERROR - 2025-04-17 09:16:25,728 - train_models - INFO - Loading job data from C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\processed\mock_data_20250417_091624_processed.csv
+2025-04-17 09:16:25,793 - run_pipeline - ERROR - 2025-04-17 09:16:25,735 - train_models - INFO - Loaded 80 job postings
+2025-04-17 09:16:25,793 - run_pipeline - ERROR - 2025-04-17 09:16:25,735 - train_models - INFO - Analyzing skill relationships
+2025-04-17 09:16:25,793 - run_pipeline - ERROR - 2025-04-17 09:16:25,737 - train_models - INFO - Identified 16 skill columns
+2025-04-17 09:16:25,793 - run_pipeline - ERROR - 2025-04-17 09:16:25,737 - train_models - INFO - Building skill co-occurrence matrix
+2025-04-17 09:16:25,793 - run_pipeline - ERROR - 2025-04-17 09:16:25,751 - train_models - INFO - Building skill relationship graph
+2025-04-17 09:16:25,793 - run_pipeline - ERROR - 2025-04-17 09:16:25,752 - train_models - INFO - Finding skill clusters
+2025-04-17 09:16:25,793 - run_pipeline - ERROR - 2025-04-17 09:16:25,753 - train_models - INFO - Completed skill relationship analysis in 0.02 seconds
+2025-04-17 09:16:25,793 - run_pipeline - ERROR - 2025-04-17 09:16:25,753 - train_models - INFO - Completed skill relationship analysis
+2025-04-17 09:16:25,793 - run_pipeline - ERROR - 2025-04-17 09:16:25,753 - train_models - INFO - Analyzing skill trends
+2025-04-17 09:16:25,794 - run_pipeline - ERROR - 2025-04-17 09:16:25,754 - train_models - INFO - Identified 16 skill columns
+2025-04-17 09:16:25,794 - run_pipeline - ERROR - 2025-04-17 09:16:25,754 - train_models - WARNING - Limited date variation, generating synthetic time series
+2025-04-17 09:16:25,794 - run_pipeline - ERROR - 2025-04-17 09:16:25,754 - train_models - INFO - Preparing time series data
+2025-04-17 09:16:25,794 - run_pipeline - ERROR - 2025-04-17 09:16:25,759 - train_models - INFO - Completed skill trend analysis in 0.01 seconds
+2025-04-17 09:16:25,794 - run_pipeline - ERROR - 2025-04-17 09:16:25,759 - train_models - INFO - Completed skill trend analysis
+2025-04-17 09:16:25,794 - run_pipeline - ERROR - 2025-04-17 09:16:25,759 - train_models - INFO - Training predictive models
+2025-04-17 09:16:25,794 - run_pipeline - ERROR - 2025-04-17 09:16:25,760 - train_models - INFO - Identified 16 skill columns
+2025-04-17 09:16:25,794 - run_pipeline - ERROR - 2025-04-17 09:16:25,760 - train_models - INFO - Training simplified prediction models
+2025-04-17 09:16:25,794 - run_pipeline - ERROR - 2025-04-17 09:16:25,764 - train_models - INFO - Completed predictive model training in 0.01 seconds
+2025-04-17 09:16:25,794 - run_pipeline - ERROR - 2025-04-17 09:16:25,764 - train_models - INFO - Completed predictive model training
+2025-04-17 09:16:25,794 - run_pipeline - ERROR - 2025-04-17 09:16:25,764 - train_models - INFO - Model training completed
+2025-04-17 09:16:25,797 - run_pipeline - INFO - Command completed successfully
+2025-04-17 09:16:25,797 - run_pipeline - INFO - Pipeline completed successfully

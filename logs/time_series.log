@@ -1,0 +1,9 @@
+2025-04-17 08:32:55,799 - time_series - INFO - Analyzing skill trends in C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\processed\all_results_20250417_081857_processed.csv
+2025-04-17 08:32:55,800 - time_series - ERROR - No skill columns found in data
+2025-04-17 08:34:42,424 - time_series - INFO - Analyzing skill trends in C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\processed\mock_data_20250417_083440_processed.csv
+2025-04-17 08:34:42,425 - time_series - INFO - Preparing time series data
+2025-04-17 08:34:42,431 - time_series - INFO - Detecting skill demand trends
+2025-04-17 08:34:42,436 - time_series - INFO - Identifying emerging skills
+2025-04-17 08:34:42,437 - time_series - INFO - Identifying declining skills
+2025-04-17 08:34:42,437 - time_series - INFO - Saving trend analysis to C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\models\skill_trends
+2025-04-17 08:34:42,438 - time_series - INFO - Saved trend analysis results to C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\models\skill_trends

@@ -1,0 +1,6 @@
+2025-04-17 08:32:55,776 - skill_relationships - INFO - Analyzing skill relationships in C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\processed\all_results_20250417_081857_processed.csv
+2025-04-17 08:32:55,779 - skill_relationships - INFO - Building skill co-occurrence matrix
+2025-04-17 08:32:55,797 - skill_relationships - INFO - Building skill relationship graph
+2025-04-17 08:34:42,343 - skill_relationships - INFO - Analyzing skill relationships in C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\processed\mock_data_20250417_083440_processed.csv
+2025-04-17 08:34:42,353 - skill_relationships - INFO - Building skill co-occurrence matrix
+2025-04-17 08:34:42,422 - skill_relationships - INFO - Building skill relationship graph

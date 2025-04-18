@@ -1,0 +1,28 @@
+2025-04-17 08:32:55,800 - predictive - INFO - Training predictive models with data from C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\processed\all_results_20250417_081857_processed.csv
+2025-04-17 08:32:55,801 - predictive - ERROR - No skill columns found in data
+2025-04-17 08:34:42,438 - predictive - INFO - Training predictive models with data from C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\processed\mock_data_20250417_083440_processed.csv
+2025-04-17 08:34:42,440 - predictive - INFO - Training models for 16 skills
+2025-04-17 08:34:42,440 - predictive - INFO - Training model for docker
+2025-04-17 08:34:42,440 - predictive - INFO - Training random_forest model
+2025-04-17 08:34:42,478 - predictive - INFO - Training model for teamwork
+2025-04-17 08:34:42,479 - predictive - INFO - Training random_forest model
+2025-04-17 08:34:42,515 - predictive - INFO - Training model for javascript
+2025-04-17 08:34:42,515 - predictive - INFO - Training random_forest model
+2025-04-17 08:34:42,550 - predictive - INFO - Training model for kubernetes
+2025-04-17 08:34:42,551 - predictive - INFO - Training random_forest model
+2025-04-17 08:34:42,586 - predictive - INFO - Training model for communication
+2025-04-17 08:34:42,586 - predictive - INFO - Training random_forest model
+2025-04-17 08:34:42,619 - predictive - INFO - Training model for angular
+2025-04-17 08:34:42,620 - predictive - INFO - Training random_forest model
+2025-04-17 08:34:42,655 - predictive - INFO - Training model for pytorch
+2025-04-17 08:34:42,655 - predictive - INFO - Training random_forest model
+2025-04-17 08:34:42,689 - predictive - INFO - Training model for azure
+2025-04-17 08:34:42,690 - predictive - INFO - Training random_forest model
+2025-04-17 08:34:42,724 - predictive - INFO - Training model for problem solving
+2025-04-17 08:34:42,724 - predictive - INFO - Training random_forest model
+2025-04-17 08:34:42,759 - predictive - INFO - Training model for java
+2025-04-17 08:34:42,760 - predictive - INFO - Training random_forest model
+2025-04-17 08:34:42,795 - predictive - INFO - Training model for python
+2025-04-17 08:34:42,796 - predictive - INFO - Training random_forest model
+2025-04-17 08:34:42,832 - predictive - INFO - Training model for aws
+2025-04-17 08:34:42,832 - predictive - INFO - Training random_forest model

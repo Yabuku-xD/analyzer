@@ -1,0 +1,130 @@
+{
+  "azure": {
+    "direction": "decreasing",
+    "slope": -0.07142857142857126,
+    "mean_demand": 2.2857142857142856,
+    "max_demand": 5.0,
+    "min_demand": 1.0,
+    "volatility": 0.6059599821770412
+  },
+  "tensorflow": {
+    "direction": "increasing",
+    "slope": 0.03571428571428578,
+    "mean_demand": 3.5714285714285716,
+    "max_demand": 6.0,
+    "min_demand": 1.0,
+    "volatility": 0.44542114902640173
+  },
+  "java": {
+    "direction": "increasing",
+    "slope": 0.285714285714286,
+    "mean_demand": 3.7142857142857144,
+    "max_demand": 6.0,
+    "min_demand": 2.0,
+    "volatility": 0.3440104580768907
+  },
+  "javascript": {
+    "direction": "increasing",
+    "slope": 0.2857142857142858,
+    "mean_demand": 4.0,
+    "max_demand": 7.0,
+    "min_demand": 0.0,
+    "volatility": 0.5345224838248488
+  },
+  "python": {
+    "direction": "increasing",
+    "slope": 0.25,
+    "mean_demand": 3.0,
+    "max_demand": 5.0,
+    "min_demand": 2.0,
+    "volatility": 0.3086066999241838
+  },
+  "leadership": {
+    "direction": "increasing",
+    "slope": 0.17857142857142855,
+    "mean_demand": 2.142857142857143,
+    "max_demand": 4.0,
+    "min_demand": 0.0,
+    "volatility": 0.5249338582674541
+  },
+  "teamwork": {
+    "direction": "decreasing",
+    "slope": -0.3571428571428573,
+    "mean_demand": 2.4285714285714284,
+    "max_demand": 5.0,
+    "min_demand": 0.0,
+    "volatility": 0.6169463812765598
+  },
+  "problem solving": {
+    "direction": "increasing",
+    "slope": 0.24999999999999992,
+    "mean_demand": 2.4285714285714284,
+    "max_demand": 5.0,
+    "min_demand": 1.0,
+    "volatility": 0.5326697140080834
+  },
+  "aws": {
+    "direction": "increasing",
+    "slope": 0.10714285714285723,
+    "mean_demand": 3.5714285714285716,
+    "max_demand": 5.0,
+    "min_demand": 2.0,
+    "volatility": 0.2939387691339814
+  },
+  "communication": {
+    "direction": "increasing",
+    "slope": 0.5714285714285718,
+    "mean_demand": 11.428571428571429,
+    "max_demand": 18.0,
+    "min_demand": 9.0,
+    "volatility": 0.25980762113533157
+  },
+  "docker": {
+    "direction": "increasing",
+    "slope": 0.10714285714285707,
+    "mean_demand": 4.0,
+    "max_demand": 7.0,
+    "min_demand": 2.0,
+    "volatility": 0.3779644730092272
+  },
+  "sql": {
+    "direction": "increasing",
+    "slope": 0.21428571428571455,
+    "mean_demand": 2.7142857142857144,
+    "max_demand": 6.0,
+    "min_demand": 1.0,
+    "volatility": 0.7021928454803333
+  },
+  "kubernetes": {
+    "direction": "increasing",
+    "slope": 0.035714285714285594,
+    "mean_demand": 2.2857142857142856,
+    "max_demand": 4.0,
+    "min_demand": 0.0,
+    "volatility": 0.6059599821770411
+  },
+  "angular": {
+    "direction": "increasing",
+    "slope": 0.6428571428571429,
+    "mean_demand": 3.5714285714285716,
+    "max_demand": 6.0,
+    "min_demand": 1.0,
+    "volatility": 0.44542114902640173
+  },
+  "pytorch": {
+    "direction": "increasing",
+    "slope": 1.0000000000000002,
+    "mean_demand": 3.4285714285714284,
+    "max_demand": 9.0,
+    "min_demand": 1.0,
+    "volatility": 0.7120003121097943
+  },
+  "react": {
+    "direction": "increasing",
+    "slope": 0.21428571428571447,
+    "mean_demand": 4.285714285714286,
+    "max_demand": 6.0,
+    "min_demand": 2.0,
+    "volatility": 0.32317865716108857
+  }
+}
