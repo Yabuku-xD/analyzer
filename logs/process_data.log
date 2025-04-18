@@ -96,3 +96,27 @@
 2025-04-17 09:16:25,380 - process_data - INFO - Updating skill dictionary based on 12 files
 2025-04-17 09:16:25,380 - process_data - INFO - Saved updated skill dictionary to C:\Users\Yabuku\Downloads\dynamic-workforce-analyzer\data\processed\skill_dictionary.json
 2025-04-17 09:16:25,380 - process_data - INFO - Processing completed
+2025-04-17 22:06:07,953 - process_data - INFO - Processing data with the following parameters:
+2025-04-17 22:06:07,953 - process_data - INFO - Input directory: C:\Users\Yabuku\Downloads\analyzer\data\raw
+2025-04-17 22:06:07,953 - process_data - INFO - Output directory: C:\Users\Yabuku\Downloads\analyzer\data\processed
+2025-04-17 22:06:07,953 - process_data - INFO - Update skill dictionary: True
+2025-04-17 22:06:07,953 - process_data - INFO - Workers: auto
+2025-04-17 22:06:07,953 - process_data - INFO - Fast mode: False
+2025-04-17 22:06:07,953 - process_data - INFO - Processing 14 files using 12 workers
+2025-04-17 22:06:08,648 - process_data - INFO - Processed 20 job postings from C:\Users\Yabuku\Downloads\analyzer\data\raw\all_results_20250417_081857.json
+2025-04-17 22:06:08,650 - process_data - INFO - Processed 20 job postings from C:\Users\Yabuku\Downloads\analyzer\data\raw\all_results_20250417_083253.json
+2025-04-17 22:06:08,679 - process_data - INFO - Processed 80 job postings from C:\Users\Yabuku\Downloads\analyzer\data\raw\all_results_20250417_083440.json
+2025-04-17 22:06:08,684 - process_data - INFO - Processed 80 job postings from C:\Users\Yabuku\Downloads\analyzer\data\raw\all_results_20250417_083822.json
+2025-04-17 22:06:08,687 - process_data - INFO - Processed 20 job postings from C:\Users\Yabuku\Downloads\analyzer\data\raw\mock_data_20250417_081857.json
+2025-04-17 22:06:08,691 - process_data - INFO - Processed 80 job postings from C:\Users\Yabuku\Downloads\analyzer\data\raw\all_results_20250417_091423.json
+2025-04-17 22:06:08,696 - process_data - INFO - Processed 20 job postings from C:\Users\Yabuku\Downloads\analyzer\data\raw\mock_data_20250417_083253.json
+2025-04-17 22:06:08,697 - process_data - INFO - Processed 80 job postings from C:\Users\Yabuku\Downloads\analyzer\data\raw\all_results_20250417_091624.json
+2025-04-17 22:06:08,701 - process_data - INFO - Processed 80 job postings from C:\Users\Yabuku\Downloads\analyzer\data\raw\all_results_20250417_220607.json
+2025-04-17 22:06:08,711 - process_data - INFO - Processed 80 job postings from C:\Users\Yabuku\Downloads\analyzer\data\raw\mock_data_20250417_083822.json
+2025-04-17 22:06:08,711 - process_data - INFO - Processed 80 job postings from C:\Users\Yabuku\Downloads\analyzer\data\raw\mock_data_20250417_091423.json
+2025-04-17 22:06:08,711 - process_data - INFO - Processed 80 job postings from C:\Users\Yabuku\Downloads\analyzer\data\raw\mock_data_20250417_083440.json
+2025-04-17 22:06:08,711 - process_data - INFO - Processed 80 job postings from C:\Users\Yabuku\Downloads\analyzer\data\raw\mock_data_20250417_091624.json
+2025-04-17 22:06:08,711 - process_data - INFO - Processed 80 job postings from C:\Users\Yabuku\Downloads\analyzer\data\raw\mock_data_20250417_220607.json
+2025-04-17 22:06:08,729 - process_data - INFO - Updating skill dictionary based on 14 files
+2025-04-17 22:06:08,731 - process_data - INFO - Saved updated skill dictionary to C:\Users\Yabuku\Downloads\analyzer\data\processed\skill_dictionary.json
+2025-04-17 22:06:08,731 - process_data - INFO - Processing completed

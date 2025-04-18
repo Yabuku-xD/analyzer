@@ -298,6 +298,67 @@ h3 {
     color: var(--text-dim);
 }
 
+/* Loading spinner */
+.loading-spinner {
+    border: 4px solid rgba(255, 255, 255, 0.1);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border-top: 4px solid #0055ff;
+    animation: spin 1s linear infinite;
+    margin: 50px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Recommendation item styling */
+.recommendation-item {
+    border-left: 3px solid #0055ff;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1rem;
+    background-color: rgba(0, 85, 255, 0.05);
+    border-radius: 0 8px 8px 0;
+}
+
+.recommendation-item h4 {
+    margin: 0 0 0.5rem;
+    font-size: 1rem;
+}
+
+.recommendation-item p {
+    margin: 0.25rem 0;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Add to app/static/css/style.css */
+.error-message {
+    color: #ff5555;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 85, 85, 0.1);
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.loading-spinner {
+    border: 4px solid rgba(255, 255, 255, 0.1);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border-top: 4px solid #0055ff;
+    animation: spin 1s linear infinite;
+    margin: 50px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
 /* Footer */
 footer {
     text-align: center;

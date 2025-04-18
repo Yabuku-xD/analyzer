@@ -1,26 +1,26 @@
 {
   "0": [
     "communication",
-    "azure",
-    "tensorflow",
-    "java",
-    "javascript"
-  ],
-  "1": [
-    "react",
-    "python",
-    "leadership",
-    "teamwork",
-    "problem solving"
-  ],
-  "2": [
-    "docker",
-    "aws",
-    "sql",
     "kubernetes",
+    "sql",
+    "docker",
     "angular"
   ],
+  "1": [
+    "aws",
+    "leadership",
+    "javascript",
+    "azure",
+    "react"
+  ],
+  "2": [
+    "teamwork",
+    "pytorch",
+    "problem solving",
+    "java",
+    "tensorflow"
+  ],
   "3": [
-    "pytorch"
+    "python"
   ]
 }

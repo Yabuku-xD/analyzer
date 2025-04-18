@@ -1,130 +1,130 @@
 {
-  "azure": {
+  "kubernetes": {
     "direction": "decreasing",
-    "slope": -0.07142857142857126,
-    "mean_demand": 2.2857142857142856,
-    "max_demand": 5.0,
-    "min_demand": 1.0,
-    "volatility": 0.6059599821770412
-  },
-  "tensorflow": {
-    "direction": "increasing",
-    "slope": 0.03571428571428578,
-    "mean_demand": 3.5714285714285716,
-    "max_demand": 6.0,
-    "min_demand": 1.0,
-    "volatility": 0.44542114902640173
-  },
-  "java": {
-    "direction": "increasing",
-    "slope": 0.285714285714286,
-    "mean_demand": 3.7142857142857144,
-    "max_demand": 6.0,
-    "min_demand": 2.0,
-    "volatility": 0.3440104580768907
-  },
-  "javascript": {
-    "direction": "increasing",
-    "slope": 0.2857142857142858,
-    "mean_demand": 4.0,
-    "max_demand": 7.0,
-    "min_demand": 0.0,
-    "volatility": 0.5345224838248488
-  },
-  "python": {
-    "direction": "increasing",
-    "slope": 0.25,
+    "slope": -0.35714285714285726,
     "mean_demand": 3.0,
-    "max_demand": 5.0,
-    "min_demand": 2.0,
-    "volatility": 0.3086066999241838
-  },
-  "leadership": {
-    "direction": "increasing",
-    "slope": 0.17857142857142855,
-    "mean_demand": 2.142857142857143,
     "max_demand": 4.0,
-    "min_demand": 0.0,
-    "volatility": 0.5249338582674541
-  },
-  "teamwork": {
-    "direction": "decreasing",
-    "slope": -0.3571428571428573,
-    "mean_demand": 2.4285714285714284,
-    "max_demand": 5.0,
-    "min_demand": 0.0,
-    "volatility": 0.6169463812765598
-  },
-  "problem solving": {
-    "direction": "increasing",
-    "slope": 0.24999999999999992,
-    "mean_demand": 2.4285714285714284,
-    "max_demand": 5.0,
-    "min_demand": 1.0,
-    "volatility": 0.5326697140080834
-  },
-  "aws": {
-    "direction": "increasing",
-    "slope": 0.10714285714285723,
-    "mean_demand": 3.5714285714285716,
-    "max_demand": 5.0,
     "min_demand": 2.0,
-    "volatility": 0.2939387691339814
-  },
-  "communication": {
-    "direction": "increasing",
-    "slope": 0.5714285714285718,
-    "mean_demand": 11.428571428571429,
-    "max_demand": 18.0,
-    "min_demand": 9.0,
-    "volatility": 0.25980762113533157
-  },
-  "docker": {
-    "direction": "increasing",
-    "slope": 0.10714285714285707,
-    "mean_demand": 4.0,
-    "max_demand": 7.0,
-    "min_demand": 2.0,
-    "volatility": 0.3779644730092272
+    "volatility": 0.2519763153394848
   },
   "sql": {
     "direction": "increasing",
-    "slope": 0.21428571428571455,
-    "mean_demand": 2.7142857142857144,
-    "max_demand": 6.0,
-    "min_demand": 1.0,
-    "volatility": 0.7021928454803333
-  },
-  "kubernetes": {
-    "direction": "increasing",
-    "slope": 0.035714285714285594,
-    "mean_demand": 2.2857142857142856,
-    "max_demand": 4.0,
-    "min_demand": 0.0,
-    "volatility": 0.6059599821770411
-  },
-  "angular": {
-    "direction": "increasing",
-    "slope": 0.6428571428571429,
-    "mean_demand": 3.5714285714285716,
-    "max_demand": 6.0,
-    "min_demand": 1.0,
-    "volatility": 0.44542114902640173
-  },
-  "pytorch": {
-    "direction": "increasing",
-    "slope": 1.0000000000000002,
-    "mean_demand": 3.4285714285714284,
-    "max_demand": 9.0,
-    "min_demand": 1.0,
-    "volatility": 0.7120003121097943
-  },
-  "react": {
-    "direction": "increasing",
-    "slope": 0.21428571428571447,
-    "mean_demand": 4.285714285714286,
+    "slope": 2.0294525820309187e-16,
+    "mean_demand": 3.7142857142857144,
     "max_demand": 6.0,
     "min_demand": 2.0,
-    "volatility": 0.32317865716108857
+    "volatility": 0.3997040325158947
+  },
+  "docker": {
+    "direction": "decreasing",
+    "slope": -0.10714285714285696,
+    "mean_demand": 3.2857142857142856,
+    "max_demand": 5.0,
+    "min_demand": 2.0,
+    "volatility": 0.3532190610711287
+  },
+  "angular": {
+    "direction": "decreasing",
+    "slope": -0.10714285714285705,
+    "mean_demand": 3.2857142857142856,
+    "max_demand": 5.0,
+    "min_demand": 1.0,
+    "volatility": 0.4215373789057677
+  },
+  "leadership": {
+    "direction": "increasing",
+    "slope": 0.03571428571428597,
+    "mean_demand": 3.142857142857143,
+    "max_demand": 6.0,
+    "min_demand": 0.0,
+    "volatility": 0.5995866344669508
+  },
+  "javascript": {
+    "direction": "decreasing",
+    "slope": -0.3571428571428571,
+    "mean_demand": 3.0,
+    "max_demand": 4.0,
+    "min_demand": 1.0,
+    "volatility": 0.3563483225498992
+  },
+  "aws": {
+    "direction": "decreasing",
+    "slope": -0.2142857142857142,
+    "mean_demand": 3.7142857142857144,
+    "max_demand": 7.0,
+    "min_demand": 0.0,
+    "volatility": 0.532938710021193
+  },
+  "azure": {
+    "direction": "decreasing",
+    "slope": -0.24999999999999992,
+    "mean_demand": 2.7142857142857144,
+    "max_demand": 4.0,
+    "min_demand": 0.0,
+    "volatility": 0.5102820902543503
+  },
+  "react": {
+    "direction": "decreasing",
+    "slope": -0.21428571428571414,
+    "mean_demand": 3.7142857142857144,
+    "max_demand": 6.0,
+    "min_demand": 1.0,
+    "volatility": 0.4485347611419461
+  },
+  "pytorch": {
+    "direction": "decreasing",
+    "slope": -0.28571428571428553,
+    "mean_demand": 3.2857142857142856,
+    "max_demand": 7.0,
+    "min_demand": 1.0,
+    "volatility": 0.5324977701702561
+  },
+  "problem solving": {
+    "direction": "decreasing",
+    "slope": -0.03571428571428542,
+    "mean_demand": 3.5714285714285716,
+    "max_demand": 7.0,
+    "min_demand": 1.0,
+    "volatility": 0.5959865770300535
+  },
+  "java": {
+    "direction": "increasing",
+    "slope": 0.10714285714285707,
+    "mean_demand": 2.5714285714285716,
+    "max_demand": 4.0,
+    "min_demand": 0.0,
+    "volatility": 0.5443310539518174
+  },
+  "tensorflow": {
+    "direction": "increasing",
+    "slope": 0.3571428571428572,
+    "mean_demand": 3.0,
+    "max_demand": 5.0,
+    "min_demand": 1.0,
+    "volatility": 0.4364357804719847
+  },
+  "python": {
+    "direction": "increasing",
+    "slope": 0.21428571428571447,
+    "mean_demand": 3.142857142857143,
+    "max_demand": 6.0,
+    "min_demand": 1.0,
+    "volatility": 0.5222329678670935
+  },
+  "communication": {
+    "direction": "increasing",
+    "slope": 0.07142857142857192,
+    "mean_demand": 11.428571428571429,
+    "max_demand": 13.0,
+    "min_demand": 10.0,
+    "volatility": 0.07905694150420947
+  },
+  "teamwork": {
+    "direction": "decreasing",
+    "slope": -0.24999999999999994,
+    "mean_demand": 3.7142857142857144,
+    "max_demand": 5.0,
+    "min_demand": 2.0,
+    "volatility": 0.2773500981126146
   }
 }

@@ -465,3 +465,89 @@
 2025-04-17 09:16:25,794 - run_pipeline - ERROR - 2025-04-17 09:16:25,764 - train_models - INFO - Model training completed
 2025-04-17 09:16:25,797 - run_pipeline - INFO - Command completed successfully
 2025-04-17 09:16:25,797 - run_pipeline - INFO - Pipeline completed successfully
+2025-04-17 22:00:01,799 - run_pipeline - INFO - Running pipeline with the following parameters:
+2025-04-17 22:00:01,799 - run_pipeline - INFO - Queries: ['data scientist', 'data analyst', 'machine learning engineer', 'software engineer', 'product manager']
+2025-04-17 22:00:01,800 - run_pipeline - INFO - Locations: ['New York', 'San Francisco', 'Seattle', 'Austin', 'Remote']
+2025-04-17 22:00:01,800 - run_pipeline - INFO - Sources: ['linkedin', 'indeed']
+2025-04-17 22:00:01,800 - run_pipeline - INFO - Limit per query: 100
+2025-04-17 22:00:01,800 - run_pipeline - INFO - Skip scraping: False
+2025-04-17 22:00:01,800 - run_pipeline - INFO - Skip processing: False
+2025-04-17 22:00:01,800 - run_pipeline - INFO - Skip modeling: False
+2025-04-17 22:00:01,800 - run_pipeline - INFO - Running command: C:\Users\Yabuku\AppData\Local\Programs\Python\Python311\python.exe C:\Users\Yabuku\Downloads\analyzer\scripts\run_scraper.py --queries data scientist data analyst machine learning engineer software engineer product manager --locations New York San Francisco Seattle Austin Remote --sources linkedin indeed --limit 100
+2025-04-17 22:06:07,186 - run_pipeline - INFO - Running pipeline with the following parameters:
+2025-04-17 22:06:07,186 - run_pipeline - INFO - Queries: ['data scientist', 'data analyst']
+2025-04-17 22:06:07,186 - run_pipeline - INFO - Locations: ['New York', 'Remote']
+2025-04-17 22:06:07,186 - run_pipeline - INFO - Sources: ['mock']
+2025-04-17 22:06:07,186 - run_pipeline - INFO - Limit per query: 20
+2025-04-17 22:06:07,186 - run_pipeline - INFO - Skip scraping: False
+2025-04-17 22:06:07,186 - run_pipeline - INFO - Skip processing: False
+2025-04-17 22:06:07,186 - run_pipeline - INFO - Skip modeling: False
+2025-04-17 22:06:07,186 - run_pipeline - INFO - Running command: C:\Users\Yabuku\AppData\Local\Programs\Python\Python311\python.exe C:\Users\Yabuku\Downloads\analyzer\scripts\run_scraper.py --queries data scientist data analyst --locations New York Remote --sources mock --limit 20
+2025-04-17 22:06:07,649 - run_pipeline - ERROR - 2025-04-17 22:06:07,590 - run_scraper - INFO - Running scraper with the following parameters:
+2025-04-17 22:06:07,649 - run_pipeline - ERROR - 2025-04-17 22:06:07,590 - run_scraper - INFO - Queries: ['data scientist', 'data analyst']
+2025-04-17 22:06:07,649 - run_pipeline - ERROR - 2025-04-17 22:06:07,590 - run_scraper - INFO - Locations: ['New York', 'Remote']
+2025-04-17 22:06:07,649 - run_pipeline - ERROR - 2025-04-17 22:06:07,590 - run_scraper - INFO - Sources: ['mock']
+2025-04-17 22:06:07,649 - run_pipeline - ERROR - 2025-04-17 22:06:07,590 - run_scraper - INFO - Limit per query: 20
+2025-04-17 22:06:07,649 - run_pipeline - ERROR - 2025-04-17 22:06:07,590 - run_scraper - INFO - Output directory: C:\Users\Yabuku\Downloads\analyzer\data\raw
+2025-04-17 22:06:07,649 - run_pipeline - ERROR - 2025-04-17 22:06:07,590 - scraper - INFO - Generating mock data for 2 queries and 2 locations
+2025-04-17 22:06:07,649 - run_pipeline - ERROR - 2025-04-17 22:06:07,590 - scraper - INFO - Generated 80 mock job postings saved to data\raw\mock_data_20250417_220607.json
+2025-04-17 22:06:07,649 - run_pipeline - ERROR - 2025-04-17 22:06:07,590 - scraper - INFO - Saved 80 total job postings to data\raw\all_results_20250417_220607.json
+2025-04-17 22:06:07,649 - run_pipeline - ERROR - 2025-04-17 22:06:07,590 - run_scraper - INFO - Scraping completed
+2025-04-17 22:06:07,652 - run_pipeline - INFO - Command completed successfully
+2025-04-17 22:06:07,652 - run_pipeline - INFO - Running command: C:\Users\Yabuku\AppData\Local\Programs\Python\Python311\python.exe C:\Users\Yabuku\Downloads\analyzer\scripts\process_data.py --update-skill-dict
+2025-04-17 22:06:08,759 - run_pipeline - ERROR - 2025-04-17 22:06:07,953 - process_data - INFO - Processing data with the following parameters:
+2025-04-17 22:06:08,759 - run_pipeline - ERROR - 2025-04-17 22:06:07,953 - process_data - INFO - Input directory: C:\Users\Yabuku\Downloads\analyzer\data\raw
+2025-04-17 22:06:08,759 - run_pipeline - ERROR - 2025-04-17 22:06:07,953 - process_data - INFO - Output directory: C:\Users\Yabuku\Downloads\analyzer\data\processed
+2025-04-17 22:06:08,759 - run_pipeline - ERROR - 2025-04-17 22:06:07,953 - process_data - INFO - Update skill dictionary: True
+2025-04-17 22:06:08,759 - run_pipeline - ERROR - 2025-04-17 22:06:07,953 - process_data - INFO - Workers: auto
+2025-04-17 22:06:08,759 - run_pipeline - ERROR - 2025-04-17 22:06:07,953 - process_data - INFO - Fast mode: False
+2025-04-17 22:06:08,759 - run_pipeline - ERROR - 2025-04-17 22:06:07,953 - process_data - INFO - Processing 14 files using 12 workers
+2025-04-17 22:06:08,759 - run_pipeline - ERROR - 2025-04-17 22:06:08,648 - process_data - INFO - Processed 20 job postings from C:\Users\Yabuku\Downloads\analyzer\data\raw\all_results_20250417_081857.json
+2025-04-17 22:06:08,759 - run_pipeline - ERROR - 2025-04-17 22:06:08,650 - process_data - INFO - Processed 20 job postings from C:\Users\Yabuku\Downloads\analyzer\data\raw\all_results_20250417_083253.json
+2025-04-17 22:06:08,759 - run_pipeline - ERROR - 2025-04-17 22:06:08,679 - process_data - INFO - Processed 80 job postings from C:\Users\Yabuku\Downloads\analyzer\data\raw\all_results_20250417_083440.json
+2025-04-17 22:06:08,759 - run_pipeline - ERROR - 2025-04-17 22:06:08,684 - process_data - INFO - Processed 80 job postings from C:\Users\Yabuku\Downloads\analyzer\data\raw\all_results_20250417_083822.json
+2025-04-17 22:06:08,759 - run_pipeline - ERROR - 2025-04-17 22:06:08,687 - process_data - INFO - Processed 20 job postings from C:\Users\Yabuku\Downloads\analyzer\data\raw\mock_data_20250417_081857.json
+2025-04-17 22:06:08,759 - run_pipeline - ERROR - 2025-04-17 22:06:08,691 - process_data - INFO - Processed 80 job postings from C:\Users\Yabuku\Downloads\analyzer\data\raw\all_results_20250417_091423.json
+2025-04-17 22:06:08,759 - run_pipeline - ERROR - 2025-04-17 22:06:08,696 - process_data - INFO - Processed 20 job postings from C:\Users\Yabuku\Downloads\analyzer\data\raw\mock_data_20250417_083253.json
+2025-04-17 22:06:08,759 - run_pipeline - ERROR - 2025-04-17 22:06:08,697 - process_data - INFO - Processed 80 job postings from C:\Users\Yabuku\Downloads\analyzer\data\raw\all_results_20250417_091624.json
+2025-04-17 22:06:08,759 - run_pipeline - ERROR - 2025-04-17 22:06:08,701 - process_data - INFO - Processed 80 job postings from C:\Users\Yabuku\Downloads\analyzer\data\raw\all_results_20250417_220607.json
+2025-04-17 22:06:08,759 - run_pipeline - ERROR - 2025-04-17 22:06:08,711 - process_data - INFO - Processed 80 job postings from C:\Users\Yabuku\Downloads\analyzer\data\raw\mock_data_20250417_083822.json
+2025-04-17 22:06:08,759 - run_pipeline - ERROR - 2025-04-17 22:06:08,711 - process_data - INFO - Processed 80 job postings from C:\Users\Yabuku\Downloads\analyzer\data\raw\mock_data_20250417_091423.json
+2025-04-17 22:06:08,759 - run_pipeline - ERROR - 2025-04-17 22:06:08,711 - process_data - INFO - Processed 80 job postings from C:\Users\Yabuku\Downloads\analyzer\data\raw\mock_data_20250417_083440.json
+2025-04-17 22:06:08,759 - run_pipeline - ERROR - 2025-04-17 22:06:08,711 - process_data - INFO - Processed 80 job postings from C:\Users\Yabuku\Downloads\analyzer\data\raw\mock_data_20250417_091624.json
+2025-04-17 22:06:08,759 - run_pipeline - ERROR - 2025-04-17 22:06:08,711 - process_data - INFO - Processed 80 job postings from C:\Users\Yabuku\Downloads\analyzer\data\raw\mock_data_20250417_220607.json
+2025-04-17 22:06:08,759 - run_pipeline - ERROR - 2025-04-17 22:06:08,729 - process_data - INFO - Updating skill dictionary based on 14 files
+2025-04-17 22:06:08,759 - run_pipeline - ERROR - 2025-04-17 22:06:08,731 - process_data - INFO - Saved updated skill dictionary to C:\Users\Yabuku\Downloads\analyzer\data\processed\skill_dictionary.json
+2025-04-17 22:06:08,759 - run_pipeline - ERROR - 2025-04-17 22:06:08,731 - process_data - INFO - Processing completed
+2025-04-17 22:06:08,759 - run_pipeline - INFO - Command completed successfully
+2025-04-17 22:06:08,759 - run_pipeline - INFO - Running command: C:\Users\Yabuku\AppData\Local\Programs\Python\Python311\python.exe C:\Users\Yabuku\Downloads\analyzer\scripts\train_models.py --models all
+2025-04-17 22:06:09,132 - run_pipeline - ERROR - 2025-04-17 22:06:09,053 - train_models - INFO - Training models with the following parameters:
+2025-04-17 22:06:09,132 - run_pipeline - ERROR - 2025-04-17 22:06:09,053 - train_models - INFO - Input directory: C:\Users\Yabuku\Downloads\analyzer\data\processed
+2025-04-17 22:06:09,132 - run_pipeline - ERROR - 2025-04-17 22:06:09,053 - train_models - INFO - Output directory: C:\Users\Yabuku\Downloads\analyzer\data\models
+2025-04-17 22:06:09,132 - run_pipeline - ERROR - 2025-04-17 22:06:09,053 - train_models - INFO - Models to train: ['all']
+2025-04-17 22:06:09,132 - run_pipeline - ERROR - 2025-04-17 22:06:09,053 - train_models - INFO - Fast mode: False
+2025-04-17 22:06:09,132 - run_pipeline - ERROR - 2025-04-17 22:06:09,053 - train_models - INFO - Synthetic data: False
+2025-04-17 22:06:09,132 - run_pipeline - ERROR - 2025-04-17 22:06:09,053 - train_models - INFO - Using processed data from C:\Users\Yabuku\Downloads\analyzer\data\processed\mock_data_20250417_083440_processed.csv
+2025-04-17 22:06:09,132 - run_pipeline - ERROR - 2025-04-17 22:06:09,053 - train_models - INFO - Loading job data from C:\Users\Yabuku\Downloads\analyzer\data\processed\mock_data_20250417_083440_processed.csv
+2025-04-17 22:06:09,132 - run_pipeline - ERROR - 2025-04-17 22:06:09,073 - train_models - INFO - Loaded 80 job postings
+2025-04-17 22:06:09,132 - run_pipeline - ERROR - 2025-04-17 22:06:09,073 - train_models - INFO - Analyzing skill relationships
+2025-04-17 22:06:09,132 - run_pipeline - ERROR - 2025-04-17 22:06:09,073 - train_models - INFO - Identified 16 skill columns
+2025-04-17 22:06:09,132 - run_pipeline - ERROR - 2025-04-17 22:06:09,073 - train_models - INFO - Building skill co-occurrence matrix
+2025-04-17 22:06:09,132 - run_pipeline - ERROR - 2025-04-17 22:06:09,087 - train_models - INFO - Building skill relationship graph
+2025-04-17 22:06:09,132 - run_pipeline - ERROR - 2025-04-17 22:06:09,087 - train_models - INFO - Finding skill clusters
+2025-04-17 22:06:09,132 - run_pipeline - ERROR - 2025-04-17 22:06:09,087 - train_models - INFO - Completed skill relationship analysis in 0.01 seconds
+2025-04-17 22:06:09,132 - run_pipeline - ERROR - 2025-04-17 22:06:09,087 - train_models - INFO - Completed skill relationship analysis
+2025-04-17 22:06:09,132 - run_pipeline - ERROR - 2025-04-17 22:06:09,087 - train_models - INFO - Analyzing skill trends
+2025-04-17 22:06:09,132 - run_pipeline - ERROR - 2025-04-17 22:06:09,087 - train_models - INFO - Identified 16 skill columns
+2025-04-17 22:06:09,132 - run_pipeline - ERROR - 2025-04-17 22:06:09,087 - train_models - WARNING - Limited date variation, generating synthetic time series
+2025-04-17 22:06:09,132 - run_pipeline - ERROR - 2025-04-17 22:06:09,087 - train_models - INFO - Preparing time series data
+2025-04-17 22:06:09,132 - run_pipeline - ERROR - 2025-04-17 22:06:09,101 - train_models - INFO - Completed skill trend analysis in 0.01 seconds
+2025-04-17 22:06:09,132 - run_pipeline - ERROR - 2025-04-17 22:06:09,101 - train_models - INFO - Completed skill trend analysis
+2025-04-17 22:06:09,132 - run_pipeline - ERROR - 2025-04-17 22:06:09,101 - train_models - INFO - Training predictive models
+2025-04-17 22:06:09,132 - run_pipeline - ERROR - 2025-04-17 22:06:09,101 - train_models - INFO - Identified 16 skill columns
+2025-04-17 22:06:09,132 - run_pipeline - ERROR - 2025-04-17 22:06:09,101 - train_models - INFO - Training simplified prediction models
+2025-04-17 22:06:09,132 - run_pipeline - ERROR - 2025-04-17 22:06:09,101 - train_models - INFO - Completed predictive model training in 0.00 seconds
+2025-04-17 22:06:09,132 - run_pipeline - ERROR - 2025-04-17 22:06:09,101 - train_models - INFO - Completed predictive model training
+2025-04-17 22:06:09,132 - run_pipeline - ERROR - 2025-04-17 22:06:09,101 - train_models - INFO - Model training completed
+2025-04-17 22:06:09,132 - run_pipeline - INFO - Command completed successfully
+2025-04-17 22:06:09,132 - run_pipeline - INFO - Pipeline completed successfully

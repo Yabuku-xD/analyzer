@@ -1,81 +1,81 @@
 {
-  "azure": {
+  "kubernetes": {
     "type": "linear",
     "parameters": {
-      "slope": -5.520436266022423e-09,
-      "intercept": 9.784363277426898
+      "slope": -1.2438548276843939e-08,
+      "intercept": 21.85212008680159
     },
     "feature": "time_index"
   },
-  "tensorflow": {
+  "sql": {
     "type": "linear",
     "parameters": {
-      "slope": -4.015329728232755e-09,
-      "intercept": 7.28375678832685
+      "slope": -8.589128401777322e-10,
+      "intercept": 1.8158172155133587
     },
     "feature": "time_index"
   },
-  "java": {
+  "docker": {
     "type": "linear",
     "parameters": {
-      "slope": 3.058157311140494e-09,
-      "intercept": -4.984451865225191
+      "slope": -4.214163683892441e-09,
+      "intercept": 7.602034694391133
     },
     "feature": "time_index"
   },
-  "javascript": {
+  "angular": {
     "type": "linear",
     "parameters": {
-      "slope": 2.376664248523331e-09,
-      "intercept": -3.776270542515106
-    },
-    "feature": "time_index"
-  },
-  "python": {
-    "type": "linear",
-    "parameters": {
-      "slope": 2.895489369058543e-09,
-      "intercept": -4.764534212819577
+      "slope": -4.0180648619338025e-09,
+      "intercept": 7.261665467104541
     },
     "feature": "time_index"
   },
   "leadership": {
     "type": "linear",
     "parameters": {
-      "slope": 2.063314423249961e-09,
-      "intercept": -3.3947449594605756
+      "slope": 4.588712433847219e-10,
+      "intercept": -0.5214639918532444
     },
     "feature": "time_index"
   },
-  "teamwork": {
+  "javascript": {
     "type": "linear",
     "parameters": {
-      "slope": -1.3823350488712824e-08,
-      "intercept": 24.212054819691893
-    },
-    "feature": "time_index"
-  },
-  "problem solving": {
-    "type": "linear",
-    "parameters": {
-      "slope": 3.710541373595501e-09,
-      "intercept": -6.229595292241425
+      "slope": -1.2556207570019312e-08,
+      "intercept": 22.05634162317388
     },
     "feature": "time_index"
   },
   "aws": {
     "type": "linear",
     "parameters": {
-      "slope": -2.0290685407069396e-09,
-      "intercept": 3.83528861158666
+      "slope": -7.99690995947713e-09,
+      "intercept": 14.205257088753935
     },
     "feature": "time_index"
   },
-  "communication": {
+  "azure": {
     "type": "linear",
     "parameters": {
-      "slope": 6.450167115304337e-25,
-      "intercept": 0.9999999999999986
+      "slope": -9.014662845443946e-09,
+      "intercept": 15.884273378373923
+    },
+    "feature": "time_index"
+  },
+  "react": {
+    "type": "linear",
+    "parameters": {
+      "slope": -7.879250666302192e-09,
+      "intercept": 14.001035552382406
+    },
+    "feature": "time_index"
+  },
+  "pytorch": {
+    "type": "linear",
+    "parameters": {
+      "slope": -1.0175567871439233e-08,
+      "intercept": 17.949259203910806
     },
     "feature": "time_index"
   }

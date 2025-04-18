@@ -95,3 +95,31 @@
 2025-04-17 09:16:25,764 - train_models - INFO - Completed predictive model training in 0.01 seconds
 2025-04-17 09:16:25,764 - train_models - INFO - Completed predictive model training
 2025-04-17 09:16:25,764 - train_models - INFO - Model training completed
+2025-04-17 22:06:09,053 - train_models - INFO - Training models with the following parameters:
+2025-04-17 22:06:09,053 - train_models - INFO - Input directory: C:\Users\Yabuku\Downloads\analyzer\data\processed
+2025-04-17 22:06:09,053 - train_models - INFO - Output directory: C:\Users\Yabuku\Downloads\analyzer\data\models
+2025-04-17 22:06:09,053 - train_models - INFO - Models to train: ['all']
+2025-04-17 22:06:09,053 - train_models - INFO - Fast mode: False
+2025-04-17 22:06:09,053 - train_models - INFO - Synthetic data: False
+2025-04-17 22:06:09,053 - train_models - INFO - Using processed data from C:\Users\Yabuku\Downloads\analyzer\data\processed\mock_data_20250417_083440_processed.csv
+2025-04-17 22:06:09,053 - train_models - INFO - Loading job data from C:\Users\Yabuku\Downloads\analyzer\data\processed\mock_data_20250417_083440_processed.csv
+2025-04-17 22:06:09,073 - train_models - INFO - Loaded 80 job postings
+2025-04-17 22:06:09,073 - train_models - INFO - Analyzing skill relationships
+2025-04-17 22:06:09,073 - train_models - INFO - Identified 16 skill columns
+2025-04-17 22:06:09,073 - train_models - INFO - Building skill co-occurrence matrix
+2025-04-17 22:06:09,087 - train_models - INFO - Building skill relationship graph
+2025-04-17 22:06:09,087 - train_models - INFO - Finding skill clusters
+2025-04-17 22:06:09,087 - train_models - INFO - Completed skill relationship analysis in 0.01 seconds
+2025-04-17 22:06:09,087 - train_models - INFO - Completed skill relationship analysis
+2025-04-17 22:06:09,087 - train_models - INFO - Analyzing skill trends
+2025-04-17 22:06:09,087 - train_models - INFO - Identified 16 skill columns
+2025-04-17 22:06:09,087 - train_models - WARNING - Limited date variation, generating synthetic time series
+2025-04-17 22:06:09,087 - train_models - INFO - Preparing time series data
+2025-04-17 22:06:09,101 - train_models - INFO - Completed skill trend analysis in 0.01 seconds
+2025-04-17 22:06:09,101 - train_models - INFO - Completed skill trend analysis
+2025-04-17 22:06:09,101 - train_models - INFO - Training predictive models
+2025-04-17 22:06:09,101 - train_models - INFO - Identified 16 skill columns
+2025-04-17 22:06:09,101 - train_models - INFO - Training simplified prediction models
+2025-04-17 22:06:09,101 - train_models - INFO - Completed predictive model training in 0.00 seconds
+2025-04-17 22:06:09,101 - train_models - INFO - Completed predictive model training
+2025-04-17 22:06:09,101 - train_models - INFO - Model training completed

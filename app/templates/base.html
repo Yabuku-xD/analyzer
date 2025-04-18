@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,38 +8,64 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
+
 <body>
     <div class="glow-container">
         <div class="blue-glow blue-glow-top"></div>
         <div class="blue-glow blue-glow-bottom"></div>
     </div>
-    
+
     <div class="dashboard-container">
         <header>
             <h1 class="dashboard-title">Dynamic Workforce Skill Evolution Analyzer</h1>
             <p class="dashboard-subtitle">A comprehensive career intelligence platform</p>
         </header>
-        
+
         <nav class="main-nav">
             <ul>
-                <li><a href="{{ url_for('main.index') }}" class="{% if active_page == 'trends' %}active{% endif %}">Skill Trends</a></li>
-                <li><a href="{{ url_for('main.relationships') }}" class="{% if active_page == 'relationships' %}active{% endif %}">Skill Relationships</a></li>
-                <li><a href="{{ url_for('main.career') }}" class="{% if active_page == 'career' %}active{% endif %}">Career Path Optimization</a></li>
-                <li><a href="{{ url_for('main.insights') }}" class="{% if active_page == 'insights' %}active{% endif %}">Market Insights</a></li>
+                <li><a href="{{ url_for('main.index') }}"
+                        class="{% if active_page == 'trends' %}active{% endif %}">Skill Trends</a></li>
+                <li><a href="{{ url_for('main.relationships') }}"
+                        class="{% if active_page == 'relationships' %}active{% endif %}">Skill Relationships</a></li>
+                <li><a href="{{ url_for('main.career') }}"
+                        class="{% if active_page == 'career' %}active{% endif %}">Career Path Optimization</a></li>
+                <li><a href="{{ url_for('main.insights') }}"
+                        class="{% if active_page == 'insights' %}active{% endif %}">Market Insights</a></li>
             </ul>
         </nav>
-        
+
         <main class="main-content">
             {% block content %}{% endblock %}
         </main>
-        
+
         <footer>
             <p>Dynamic Workforce Skill Evolution Analyzer © 2024</p>
             <p>Data last updated: April 16, 2024</p>
         </footer>
     </div>
-    
-    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
-    {% block scripts %}{% endblock %}
+
+    {% block scripts %}
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script>
+        // Add error monitoring
+        window.addEventListener('error', function (e) {
+            console.error('JavaScript error:', e.message, 'at', e.filename, 'line', e.lineno);
+        });
+
+        // Check if Plotly loaded correctly
+        document.addEventListener('DOMContentLoaded', function () {
+            if (typeof Plotly === 'undefined') {
+                console.error('Plotly library not loaded!');
+                // Add visible error message to charts
+                document.querySelectorAll('.chart').forEach(function (chart) {
+                    chart.innerHTML = '<div class="error-message">Visualization library not loaded. Please check console for errors.</div>';
+                });
+            } else {
+                console.log('Plotly library loaded successfully');
+            }
+        });
+    </script>
+    {% endblock %}
 </body>
+
 </html>
