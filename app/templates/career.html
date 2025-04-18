@@ -1,0 +1,164 @@
+{% extends "base.html" %}
+{% set active_page = "career" %}
+
+{% block content %}
+<section class="career-section">
+    <h2>Career Path Optimizer</h2>
+    <p>Get personalized skill development recommendations</p>
+    
+    <div class="user-input">
+        <div class="filter-group">
+            <label for="current-skills">Current Skills</label>
+            <select id="current-skills" class="filter-select" multiple>
+                <option value="">Loading skills...</option>
+            </select>
+            <small>Hold Ctrl (or Cmd) to select multiple skills</small>
+        </div>
+        
+        <div class="filter-group">
+            <label for="target-job">Target Job Role</label>
+            <select id="target-job" class="filter-select">
+                <option value="">Select a target job role...</option>
+                <option value="Data Scientist">Data Scientist</option>
+                <option value="Data Analyst">Data Analyst</option>
+                <option value="Machine Learning Engineer">Machine Learning Engineer</option>
+                <option value="Software Engineer">Software Engineer</option>
+            </select>
+        </div>
+        
+        <div class="filter-group">
+            <label for="time-horizon">Time Horizon</label>
+            <select id="time-horizon" class="filter-select">
+                <option value="3m">3 Months</option>
+                <option value="6m">6 Months</option>
+                <option value="1y" selected>1 Year</option>
+                <option value="3y">3 Years</option>
+            </select>
+        </div>
+        
+        <button id="generate-recommendations" class="button">Generate Recommendations</button>
+    </div>
+    
+    <div class="recommendations-container">
+        <h3>Skill Development Recommendations</h3>
+        <div id="recommendations" class="recommendations">
+            <p>Select your current skills and target job role, then click "Generate Recommendations"</p>
+        </div>
+        
+        <h3>Skill Acquisition Path</h3>
+        <div id="skill-path-chart" class="chart chart-large"></div>
+    </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Fetch skills for dropdown
+        fetch('/api/skills')
+            .then(response => response.json())
+            .then(data => {
+                const dropdown = document.getElementById('current-skills');
+                
+                // Clear loading option
+                dropdown.innerHTML = '';
+                
+                data.skills.forEach(skill => {
+                    const option = document.createElement('option');
+                    option.value = skill;
+                    option.textContent = skill;
+                    dropdown.appendChild(option);
+                });
+            });
+        
+        // Handle recommendation generation
+        document.getElementById('generate-recommendations').addEventListener('click', function() {
+            const currentSkills = Array.from(document.getElementById('current-skills').selectedOptions).map(o => o.value);
+            const targetJob = document.getElementById('target-job').value;
+            const timeHorizon = document.getElementById('time-horizon').value;
+            
+            if (!targetJob) {
+                alert('Please select a target job role');
+                return;
+            }
+            
+            fetch('/api/recommendations', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    current_skills: currentSkills,
+                    target_job: targetJob,
+                    time_horizon: timeHorizon
+                }),
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Display recommendations
+                const container = document.getElementById('recommendations');
+                
+                if (data.recommendations.length === 0) {
+                    container.innerHTML = '<p>You already have all the skills required for this role!</p>';
+                    return;
+                }
+                
+                container.innerHTML = '';
+                
+                data.recommendations.forEach((rec, index) => {
+                    const item = document.createElement('div');
+                    item.className = 'recommendation-item';
+                    
+                    item.innerHTML = `
+                        <h4>${index + 1}. ${rec.skill}</h4>
+                        <p>Trend: ${rec.trend}</p>
+                        <p>Suggested resources: ${rec.resources}</p>
+                    `;
+                    
+                    container.appendChild(item);
+                });
+                
+                // Create skill path chart
+                const sankeyData = [{
+                    type: 'sankey',
+                    orientation: 'h',
+                    node: {
+                        pad: 15,
+                        thickness: 20,
+                        line: {
+                            color: 'black',
+                            width: 0.5
+                        },
+                        label: ['Current Skills', ...currentSkills, 'Target Skills', ...data.missing_skills, 'Career Goal'],
+                        color: ['#0055ff', ...currentSkills.map(() => '#00aaff'), '#0055ff', ...data.missing_skills.map(() => '#00ccff'), '#0055ff']
+                    },
+                    link: {
+                        source: [
+                            ...currentSkills.map(() => 0),
+                            ...data.missing_skills.map(() => 2),
+                            ...data.missing_skills.map((_, i) => i + currentSkills.length + 3)
+                        ],
+                        target: [
+                            ...currentSkills.map((_, i) => i + 1),
+                            ...data.missing_skills.map((_, i) => i + currentSkills.length + 3),
+                            ...data.missing_skills.map(() => currentSkills.length + data.missing_skills.length + 3)
+                        ],
+                        value: Array(currentSkills.length + 2 * data.missing_skills.length).fill(1)
+                    }
+                }];
+                
+                Plotly.newPlot('skill-path-chart', sankeyData, {
+                    title: 'Career Path and Skill Development',
+                    font: {
+                        size: 12,
+                        color: 'rgba(255,255,255,0.8)'
+                    },
+                    paper_bgcolor: 'rgba(0,0,0,0)',
+                    plot_bgcolor: 'rgba(0,0,0,0)'
+                });
+            });
+        });
+    });
+</script>
+{% endblock %}

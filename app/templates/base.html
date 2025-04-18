@@ -21,10 +21,10 @@
         
         <nav class="main-nav">
             <ul>
-                <li><a href="{{ url_for('index') }}" class="{% if active_page == 'trends' %}active{% endif %}">Skill Trends</a></li>
-                <li><a href="{{ url_for('relationships') }}" class="{% if active_page == 'relationships' %}active{% endif %}">Skill Relationships</a></li>
-                <li><a href="{{ url_for('career') }}" class="{% if active_page == 'career' %}active{% endif %}">Career Path Optimization</a></li>
-                <li><a href="{{ url_for('insights') }}" class="{% if active_page == 'insights' %}active{% endif %}">Market Insights</a></li>
+                <li><a href="{{ url_for('main.index') }}" class="{% if active_page == 'trends' %}active{% endif %}">Skill Trends</a></li>
+                <li><a href="{{ url_for('main.relationships') }}" class="{% if active_page == 'relationships' %}active{% endif %}">Skill Relationships</a></li>
+                <li><a href="{{ url_for('main.career') }}" class="{% if active_page == 'career' %}active{% endif %}">Career Path Optimization</a></li>
+                <li><a href="{{ url_for('main.insights') }}" class="{% if active_page == 'insights' %}active{% endif %}">Market Insights</a></li>
             </ul>
         </nav>
         

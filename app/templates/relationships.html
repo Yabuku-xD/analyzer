@@ -1,0 +1,195 @@
+{% extends "base.html" %}
+{% set active_page = "relationships" %}
+
+{% block content %}
+<section class="relationships-section">
+    <h2>Skill Relationship Network</h2>
+    <p>Explore how skills are related to each other</p>
+    
+    <div class="filters">
+        <div class="filter-group">
+            <label for="focus-skill">Focus Skill</label>
+            <select id="focus-skill" class="filter-select">
+                <option value="">Select a skill to focus on...</option>
+            </select>
+        </div>
+        
+        <div class="filter-group">
+            <label for="relationship-strength">Relationship Strength</label>
+            <input type="range" id="relationship-strength" min="0" max="1" step="0.1" value="0.3" class="range-slider">
+            <div class="range-value">0.3</div>
+        </div>
+    </div>
+    
+    <div class="network-container">
+        <h3>Skill Network</h3>
+        <div id="skill-network-graph" class="chart chart-large"></div>
+    </div>
+    
+    <div class="chart-container">
+        <h3>Skill Clusters</h3>
+        <div id="skill-clusters-chart" class="chart"></div>
+    </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Update range slider value display
+        const slider = document.getElementById('relationship-strength');
+        const valueDisplay = document.querySelector('.range-value');
+        
+        slider.addEventListener('input', function() {
+            valueDisplay.textContent = this.value;
+        });
+        
+        // Fetch skills for dropdown
+        fetch('/api/skills')
+            .then(response => response.json())
+            .then(data => {
+                const dropdown = document.getElementById('focus-skill');
+                data.skills.forEach(skill => {
+                    const option = document.createElement('option');
+                    option.value = skill;
+                    option.textContent = skill;
+                    dropdown.appendChild(option);
+                });
+            });
+        
+        // Fetch and render skill network
+        fetch('/api/skill-network')
+            .then(response => response.json())
+            .then(data => {
+                // This is a placeholder for the network visualization
+                // In a real implementation, you would use data to create a network graph
+                const placeholder = {
+                    nodes: [
+                        { id: 'Python', x: 100, y: 100, size: 20 },
+                        { id: 'SQL', x: 200, y: 150, size: 15 },
+                        { id: 'Machine Learning', x: 150, y: 250, size: 18 }
+                    ],
+                    edges: [
+                        { source: 'Python', target: 'SQL', weight: 0.7 },
+                        { source: 'Python', target: 'Machine Learning', weight: 0.9 },
+                        { source: 'SQL', target: 'Machine Learning', weight: 0.5 }
+                    ]
+                };
+                
+                // Create a simple network visualization
+                const container = document.getElementById('skill-network-graph');
+                
+                // Use Plotly for network visualization
+                const nodes = placeholder.nodes;
+                const edges = placeholder.edges;
+                
+                const nodeTrace = {
+                    x: nodes.map(node => node.x),
+                    y: nodes.map(node => node.y),
+                    mode: 'markers+text',
+                    marker: {
+                        size: nodes.map(node => node.size),
+                        color: '#0055ff'
+                    },
+                    text: nodes.map(node => node.id),
+                    textposition: 'top center',
+                    hoverinfo: 'text',
+                    type: 'scatter'
+                };
+                
+                const edgeTraces = edges.map(edge => {
+                    const source = nodes.find(node => node.id === edge.source);
+                    const target = nodes.find(node => node.id === edge.target);
+                    
+                    return {
+                        x: [source.x, target.x],
+                        y: [source.y, target.y],
+                        mode: 'lines',
+                        line: {
+                            width: edge.weight * 5,
+                            color: 'rgba(150, 150, 150, 0.5)'
+                        },
+                        hoverinfo: 'none',
+                        type: 'scatter'
+                    };
+                });
+                
+                Plotly.newPlot('skill-network-graph', [...edgeTraces, nodeTrace], {
+                    title: 'Skill Relationship Network',
+                    showlegend: false,
+                    hovermode: 'closest',
+                    margin: { t: 50, r: 10, b: 10, l: 10 },
+                    xaxis: {
+                        showgrid: false,
+                        zeroline: false,
+                        showticklabels: false
+                    },
+                    yaxis: {
+                        showgrid: false,
+                        zeroline: false,
+                        showticklabels: false
+                    },
+                    paper_bgcolor: 'rgba(0,0,0,0)',
+                    plot_bgcolor: 'rgba(0,0,0,0)',
+                    font: {
+                        color: 'rgba(255,255,255,0.8)'
+                    }
+                });
+                
+                // Create skill clusters visualization
+                const clusters = [
+                    { cluster: 'Cluster 1', skills: ['Python', 'Machine Learning', 'TensorFlow'] },
+                    { cluster: 'Cluster 2', skills: ['SQL', 'Database', 'Data Analysis'] },
+                    { cluster: 'Cluster 3', skills: ['JavaScript', 'React', 'Web Development'] }
+                ];
+                
+                const treemapData = [{
+                    type: 'treemap',
+                    labels: clusters.flatMap(c => [c.cluster, ...c.skills.map(s => s)]),
+                    parents: clusters.flatMap(c => ['', ...c.skills.map(s => c.cluster)]),
+                    marker: {
+                        colors: clusters.flatMap(c => ['#0055ff', ...c.skills.map(() => '#00aaff')])
+                    }
+                }];
+                
+                Plotly.newPlot('skill-clusters-chart', treemapData, {
+                    title: 'Skill Clusters',
+                    margin: { t: 50, r: 10, b: 10, l: 10 },
+                    paper_bgcolor: 'rgba(0,0,0,0)',
+                    plot_bgcolor: 'rgba(0,0,0,0)',
+                    font: {
+                        color: 'rgba(255,255,255,0.8)'
+                    }
+                });
+            });
+        
+        // Handle filter changes
+        document.getElementById('focus-skill').addEventListener('change', updateNetwork);
+        document.getElementById('relationship-strength').addEventListener('input', debounce(updateNetwork, 300));
+        
+        function updateNetwork() {
+            const skill = document.getElementById('focus-skill').value;
+            const strength = document.getElementById('relationship-strength').value;
+            
+            fetch(`/api/skill-network?skill=${skill}&strength=${strength}`)
+                .then(response => response.json())
+                .then(data => {
+                    // Update visualization (this is a placeholder)
+                    console.log('Updating network with:', skill, strength);
+                });
+        }
+        
+        // Debounce function to prevent too many requests
+        function debounce(func, delay) {
+            let timeout;
+            return function() {
+                const context = this;
+                const args = arguments;
+                clearTimeout(timeout);
+                timeout = setTimeout(() => func.apply(context, args), delay);
+            };
+        }
+    });
+</script>
+{% endblock %}

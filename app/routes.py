@@ -1,16 +1,27 @@
-from flask import render_template, jsonify, Blueprint, request
-import pandas as pd
+from flask import render_template, jsonify, Blueprint
 import numpy as np
-from datetime import datetime, timedelta
 import json
 import os
 
 # Create blueprint
 main = Blueprint('main', __name__)
+# Add this function to your app/routes.py file at the top
+def ensure_data_directories():
+    """Ensure all required data directories exist"""
+    data_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'data')
+    processed_dir = os.path.join(data_dir, 'processed')
+    
+    os.makedirs(data_dir, exist_ok=True)
+    os.makedirs(processed_dir, exist_ok=True)
+    os.makedirs(os.path.join(processed_dir, 'skill_trends'), exist_ok=True)
+    os.makedirs(os.path.join(processed_dir, 'skill_analysis'), exist_ok=True)
 
+# Call this at the start of your routes.py
+ensure_data_directories()
 # Helper function to load data
 def load_data():
     data_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'data', 'processed')
+    os.makedirs(os.path.join(data_dir, 'skill_trends'), exist_ok=True)
     
     # Load skill trends
     trends_path = os.path.join(data_dir, 'skill_trends', 'skill_trends.json')
@@ -20,19 +31,19 @@ def load_data():
     try:
         with open(trends_path, 'r') as f:
             skill_trends = json.load(f)
-    except:
+    except (FileNotFoundError, json.JSONDecodeError):
         skill_trends = {}
     
     try:
         with open(emerging_path, 'r') as f:
             emerging_skills = json.load(f)
-    except:
+    except (FileNotFoundError, json.JSONDecodeError):
         emerging_skills = []
     
     try:
         with open(declining_path, 'r') as f:
             declining_skills = json.load(f)
-    except:
+    except (FileNotFoundError, json.JSONDecodeError):
         declining_skills = []
     
     # Generate synthetic data if needed
@@ -70,8 +81,12 @@ def load_data():
     return skill_trends, emerging_skills, declining_skills
 
 # Main routes
-@main.route('/')
-@main.route('/index')
+# In app/routes.py
+main = Blueprint('main', __name__, url_prefix='/')
+
+# Then register routes without Blueprint prefixing
+@main.route('/', endpoint='index')
+
 def index():
     return render_template('index.html')
 
@@ -87,7 +102,7 @@ def career():
 def insights():
     return render_template('insights.html')
 
-# API routes
+# Simple API routes
 @main.route('/api/rising-skills')
 def api_rising_skills():
     _, emerging_skills, _ = load_data()
@@ -101,66 +116,10 @@ def api_rising_skills():
         'values': [s.get('slope', 0) for s in top_skills]
     })
 
-@main.route('/api/declining-skills')
-def api_declining_skills():
-    _, _, declining_skills = load_data()
-    
-    # Sort and limit to top 10
-    declining_skills.sort(key=lambda x: x.get('slope', 0))
-    top_skills = declining_skills[:10]
-    
-    return jsonify({
-        'skills': [s.get('name', '') for s in top_skills],
-        'values': [abs(s.get('slope', 0)) for s in top_skills]
-    })
-
 @main.route('/api/skills')
 def api_skills():
     skill_trends, _, _ = load_data()
     
     return jsonify({
         'skills': list(skill_trends.keys())
-    })
-
-@main.route('/api/skill-detail/<skill>')
-def api_skill_detail(skill):
-    skill_trends, _, _ = load_data()
-    
-    # Create time series data
-    dates = pd.date_range(start='2023-01-01', end='2024-04-01', freq='MS')
-    dates_str = [d.strftime('%Y-%m-%d') for d in dates]
-    
-    if skill in skill_trends:
-        slope = skill_trends[skill].get('slope', 0)
-        mean = skill_trends[skill].get('mean_demand', 10)
-        
-        # Generate synthetic data
-        values = [mean + slope * i + np.random.normal(0, mean * 0.1) for i in range(len(dates))]
-        values = [max(0, v) for v in values]
-    else:
-        values = [10 + np.random.normal(0, 2) for _ in range(len(dates))]
-    
-    # Generate forecast
-    forecast_dates = pd.date_range(start='2024-04-01', end='2025-04-01', freq='MS')
-    forecast_dates_str = [d.strftime('%Y-%m-%d') for d in forecast_dates]
-    
-    if skill in skill_trends:
-        slope = skill_trends[skill].get('slope', 0)
-        mean = skill_trends[skill].get('mean_demand', 10)
-        
-        forecast = [mean + slope * (i + 16) for i in range(len(forecast_dates))]
-        lower_bound = [f * 0.8 for f in forecast]
-        upper_bound = [f * 1.2 for f in forecast]
-    else:
-        forecast = [10 + 0.5 * i for i in range(len(forecast_dates))]
-        lower_bound = [f * 0.8 for f in forecast]
-        upper_bound = [f * 1.2 for f in forecast]
-    
-    return jsonify({
-        'dates': dates_str,
-        'values': values,
-        'forecast_dates': forecast_dates_str,
-        'forecast': forecast,
-        'lower_bound': lower_bound,
-        'upper_bound': upper_bound
     })

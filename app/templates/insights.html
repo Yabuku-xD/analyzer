@@ -1,0 +1,218 @@
+{% extends "base.html" %}
+{% set active_page = "insights" %}
+
+{% block content %}
+<section class="insights-section">
+    <h2>Market Insights</h2>
+    <p>Discover key insights and trends in the job market</p>
+    
+    <div class="chart-container">
+        <h3>Industry Skill Demand Comparison</h3>
+        <div id="industry-comparison-chart" class="chart chart-large"></div>
+    </div>
+    
+    <div class="chart-container">
+        <h3>Skill Evolution Timeline</h3>
+        <div id="skill-evolution-chart" class="chart chart-large"></div>
+    </div>
+    
+    <div class="chart-container">
+        <h3>Skill Demand Heatmap</h3>
+        <div id="skill-heatmap" class="chart chart-large"></div>
+    </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Fetch and display industry comparison
+        fetch('/api/industry-comparison')
+            .then(response => response.json())
+            .then(data => {
+                // Create heatmap for industry comparison
+                const heatmapData = [{
+                    z: data.values,
+                    x: data.industries,
+                    y: data.skills,
+                    type: 'heatmap',
+                    colorscale: 'Viridis',
+                    showscale: true
+                }];
+                
+                Plotly.newPlot('industry-comparison-chart', heatmapData, {
+                    title: 'Skill Demand by Industry',
+                    margin: { t: 50, r: 70, b: 50, l: 100 },
+                    paper_bgcolor: 'rgba(0,0,0,0)',
+                    plot_bgcolor: 'rgba(0,0,0,0)',
+                    font: {
+                        color: 'rgba(255,255,255,0.8)'
+                    }
+                });
+            })
+            .catch(() => {
+                // Use placeholder data if API fails
+                const industries = ['Technology', 'Finance', 'Healthcare', 'Manufacturing', 'Retail'];
+                const skills = ['Python', 'Machine Learning', 'SQL', 'JavaScript', 'Cloud Computing'];
+                const values = skills.map(() => industries.map(() => Math.random()));
+                
+                const heatmapData = [{
+                    z: values,
+                    x: industries,
+                    y: skills,
+                    type: 'heatmap',
+                    colorscale: 'Viridis',
+                    showscale: true
+                }];
+                
+                Plotly.newPlot('industry-comparison-chart', heatmapData, {
+                    title: 'Skill Demand by Industry',
+                    margin: { t: 50, r: 70, b: 50, l: 100 },
+                    paper_bgcolor: 'rgba(0,0,0,0)',
+                    plot_bgcolor: 'rgba(0,0,0,0)',
+                    font: {
+                        color: 'rgba(255,255,255,0.8)'
+                    }
+                });
+            });
+        
+        // Fetch and display skill evolution timeline
+        fetch('/api/skill-evolution')
+            .then(response => response.json())
+            .then(data => {
+                // Create line chart for skill evolution
+                const traces = data.skills.map((skill, index) => ({
+                    x: data.dates,
+                    y: data.values[index],
+                    type: 'scatter',
+                    mode: 'lines+markers',
+                    name: skill,
+                    line: {
+                        width: 3
+                    },
+                    marker: {
+                        size: 8
+                    }
+                }));
+                
+                Plotly.newPlot('skill-evolution-chart', traces, {
+                    title: 'Skill Evolution Over Time',
+                    xaxis: {
+                        title: 'Date',
+                        gridcolor: 'rgba(255,255,255,0.1)'
+                    },
+                    yaxis: {
+                        title: 'Demand',
+                        gridcolor: 'rgba(255,255,255,0.1)'
+                    },
+                    paper_bgcolor: 'rgba(0,0,0,0)',
+                    plot_bgcolor: 'rgba(0,0,0,0)',
+                    font: {
+                        color: 'rgba(255,255,255,0.8)'
+                    }
+                });
+            })
+            .catch(() => {
+                // Use placeholder data if API fails
+                const dates = Array.from({length: 16}, (_, i) => {
+                    const date = new Date(2023, 0, 1);
+                    date.setMonth(date.getMonth() + i);
+                    return date.toISOString().split('T')[0];
+                });
+                
+                const skills = ['Python', 'JavaScript', 'SQL'];
+                const values = [
+                    dates.map((_, i) => 10 + i * 0.5 + Math.random() * 2),  // Python (growing)
+                    dates.map((_, i) => 15 + Math.random() * 3),            // JavaScript (stable)
+                    dates.map((_, i) => 20 - i * 0.3 + Math.random() * 2)   // SQL (declining)
+                ];
+                
+                const traces = skills.map((skill, index) => ({
+                    x: dates,
+                    y: values[index],
+                    type: 'scatter',
+                    mode: 'lines+markers',
+                    name: skill,
+                    line: {
+                        width: 3
+                    },
+                    marker: {
+                        size: 8
+                    }
+                }));
+                
+                Plotly.newPlot('skill-evolution-chart', traces, {
+                    title: 'Skill Evolution Over Time',
+                    xaxis: {
+                        title: 'Date',
+                        gridcolor: 'rgba(255,255,255,0.1)'
+                    },
+                    yaxis: {
+                        title: 'Demand',
+                        gridcolor: 'rgba(255,255,255,0.1)'
+                    },
+                    paper_bgcolor: 'rgba(0,0,0,0)',
+                    plot_bgcolor: 'rgba(0,0,0,0)',
+                    font: {
+                        color: 'rgba(255,255,255,0.8)'
+                    }
+                });
+            });
+        
+        // Fetch and display skill heatmap
+        fetch('/api/skill-heatmap')
+            .then(response => response.json())
+            .then(data => {
+                // Create heatmap for skill demand over time
+                const heatmapData = [{
+                    z: data.values,
+                    x: data.months,
+                    y: data.skills,
+                    type: 'heatmap',
+                    colorscale: 'Viridis',
+                    showscale: true
+                }];
+                
+                Plotly.newPlot('skill-heatmap', heatmapData, {
+                    title: 'Skill Demand Heatmap',
+                    margin: { t: 50, r: 50, b: 50, l: 100 },
+                    paper_bgcolor: 'rgba(0,0,0,0)',
+                    plot_bgcolor: 'rgba(0,0,0,0)',
+                    font: {
+                        color: 'rgba(255,255,255,0.8)'
+                    }
+                });
+            })
+            .catch(() => {
+                // Use placeholder data if API fails
+                const months = Array.from({length: 12}, (_, i) => {
+                    const date = new Date(2023, i, 1);
+                    return date.toLocaleString('default', { month: 'short' }) + ' ' + date.getFullYear();
+                });
+                
+                const skills = ['Python', 'SQL', 'Machine Learning', 'JavaScript', 'Cloud', 'Data Visualization', 'Big Data', 'DevOps'];
+                const values = skills.map(() => months.map(() => Math.random()));
+                
+                const heatmapData = [{
+                    z: values,
+                    x: months,
+                    y: skills,
+                    type: 'heatmap',
+                    colorscale: 'Viridis',
+                    showscale: true
+                }];
+                
+                Plotly.newPlot('skill-heatmap', heatmapData, {
+                    title: 'Skill Demand Heatmap',
+                    margin: { t: 50, r: 50, b: 50, l: 100 },
+                    paper_bgcolor: 'rgba(0,0,0,0)',
+                    plot_bgcolor: 'rgba(0,0,0,0)',
+                    font: {
+                        color: 'rgba(255,255,255,0.8)'
+                    }
+                });
+            });
+    });
+</script>
+{% endblock %}
