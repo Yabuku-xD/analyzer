@@ -28,7 +28,6 @@ def ensure_data_structure():
 
 dirs = ensure_data_structure()
 
-# Add to routes.py
 @main.route('/api/recommendations')
 def api_recommendations():
     target_job = request.args.get('target', '')
@@ -73,7 +72,7 @@ def api_recommendations():
         "currentSkills": skills,
         "recommendations": recommendations
     })
-
+    
 # Helper function to load data
 # Replace the load_data function in routes.py
 def load_data():
@@ -165,3 +164,71 @@ def api_skills():
     return jsonify({
         'skills': list(skill_trends.keys())
     })
+    
+# Add to routes.py
+@main.route('/api/declining-skills')
+def api_declining_skills():
+    _, _, declining_skills = load_data()
+    
+    # If no declining skills data exists, create synthetic data
+    if not declining_skills:
+        declining_skills = [
+            {"name": "XML", "slope": -0.35, "mean_demand": 5.2},
+            {"name": "jQuery", "slope": -0.28, "mean_demand": 7.3},
+            {"name": "Flash", "slope": -0.25, "mean_demand": 2.1},
+            {"name": "COBOL", "slope": -0.18, "mean_demand": 3.5},
+            {"name": "SVN", "slope": -0.15, "mean_demand": 4.2}
+        ]
+        
+        # Update the data cache
+        data_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'data', 'processed')
+        declining_path = os.path.join(data_dir, 'skill_trends', 'declining_skills.json')
+        os.makedirs(os.path.dirname(declining_path), exist_ok=True)
+        
+        with open(declining_path, 'w') as f:
+            json.dump(declining_skills, f)
+    
+    # Sort and limit to top 10
+    declining_skills.sort(key=lambda x: x.get('slope', 0))
+    top_skills = declining_skills[:10]
+    
+    return jsonify({
+        'skills': [s.get('name', '') for s in top_skills],
+        'values': [abs(s.get('slope', 0)) for s in top_skills]
+    })
+    
+# Add to routes.py
+@main.route('/api/skill-graph')
+def api_skill_graph():
+    # Create synthetic skill graph data
+    nodes = [
+        {"id": "Python", "label": "Python", "size": 30},
+        {"id": "SQL", "label": "SQL", "size": 25},
+        {"id": "Machine Learning", "label": "Machine Learning", "size": 22},
+        {"id": "JavaScript", "label": "JavaScript", "size": 20},
+        {"id": "AWS", "label": "AWS", "size": 18},
+        {"id": "Docker", "label": "Docker", "size": 15},
+        {"id": "TensorFlow", "label": "TensorFlow", "size": 12},
+        {"id": "PyTorch", "label": "PyTorch", "size": 10}
+    ]
+    
+    edges = [
+        {"source": "Python", "target": "Machine Learning", "weight": 0.8},
+        {"source": "Python", "target": "SQL", "weight": 0.7},
+        {"source": "Python", "target": "AWS", "weight": 0.6},
+        {"source": "Machine Learning", "target": "TensorFlow", "weight": 0.9},
+        {"source": "Machine Learning", "target": "PyTorch", "weight": 0.8},
+        {"source": "JavaScript", "target": "AWS", "weight": 0.5},
+        {"source": "Docker", "target": "AWS", "weight": 0.7},
+        {"source": "SQL", "target": "AWS", "weight": 0.4}
+    ]
+    
+    # Save the graph data
+    data_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'data', 'processed')
+    graph_path = os.path.join(data_dir, 'skill_analysis', 'skill_graph.json')
+    os.makedirs(os.path.dirname(graph_path), exist_ok=True)
+    
+    with open(graph_path, 'w') as f:
+        json.dump({"nodes": nodes, "edges": edges}, f)
+    
+    return jsonify({"nodes": nodes, "edges": edges})
